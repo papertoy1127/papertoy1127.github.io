@@ -39,28 +39,28 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"Angle",
-            content:"Angle",
+            title:"GUIExtended",
+            content:"GUIExtended",
             description:'',
             tags:''
         },
         {
-            url:'/api/ADOLib/Angle',
-            title:"Angle",
+            url:'/api/ADOLib.Settings/GUIExtended',
+            title:"GUIExtended",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"SettingsUI",
-            content:"SettingsUI",
+            title:"SettingCategory",
+            content:"SettingCategory",
             description:'',
             tags:''
         },
         {
-            url:'/api/ADOLib.Settings/SettingsUI',
-            title:"SettingsUI",
+            url:'/api/ADOLib.Settings/SettingCategory',
+            title:"SettingCategory",
             description:""
         }
     );
@@ -81,6 +81,48 @@ var searchModule = function() {
     a(
         {
             id:3,
+            title:"CategoryAttribute",
+            content:"CategoryAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.Settings/CategoryAttribute',
+            title:"CategoryAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
+            title:"SettingsUI",
+            content:"SettingsUI",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.Settings/SettingsUI',
+            title:"SettingsUI",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"Angle",
+            content:"Angle",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib/Angle',
+            title:"Angle",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
             title:"ADOLib",
             content:"ADOLib",
             description:'',
@@ -94,7 +136,21 @@ var searchModule = function() {
     );
     a(
         {
-            id:4,
+            id:7,
+            title:"Editor",
+            content:"Editor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib/Editor',
+            title:"Editor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:8,
             title:"Setting",
             content:"Setting",
             description:'',
@@ -108,71 +164,15 @@ var searchModule = function() {
     );
     a(
         {
-            id:5,
-            title:"SafeGetter",
-            content:"SafeGetter",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.SafeTools/SafeGetter_1',
-            title:"SafeGetter<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
-            title:"ForceType",
-            content:"ForceType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.Settings/ForceType',
-            title:"ForceType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:7,
-            title:"Misc",
-            content:"Misc",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.Misc/Misc',
-            title:"Misc",
-            description:""
-        }
-    );
-    a(
-        {
-            id:8,
-            title:"GUIExtended",
-            content:"GUIExtended",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.Settings/GUIExtended',
-            title:"GUIExtended",
-            description:""
-        }
-    );
-    a(
-        {
             id:9,
-            title:"SettingCategory",
-            content:"SettingCategory",
+            title:"MoreGUILayout",
+            content:"MoreGUILayout",
             description:'',
             tags:''
         },
         {
-            url:'/api/ADOLib.Settings/SettingCategory',
-            title:"SettingCategory",
+            url:'/api/ADOLib.Settings/MoreGUILayout',
+            title:"MoreGUILayout",
             description:""
         }
     );
@@ -193,104 +193,6 @@ var searchModule = function() {
     a(
         {
             id:11,
-            title:"Angle AngleType",
-            content:"Angle AngleType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib/AngleType',
-            title:"Angle.AngleType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:12,
-            title:"SafePatchAttribute",
-            content:"SafePatchAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.SafeTools/SafePatchAttribute',
-            title:"SafePatchAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:13,
-            title:"SafeGetterHelper",
-            content:"SafeGetterHelper",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.SafeTools/SafeGetterHelper',
-            title:"SafeGetterHelper",
-            description:""
-        }
-    );
-    a(
-        {
-            id:14,
-            title:"InvalidMode",
-            content:"InvalidMode",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.Settings/InvalidMode',
-            title:"InvalidMode",
-            description:""
-        }
-    );
-    a(
-        {
-            id:15,
-            title:"MoreGUILayout",
-            content:"MoreGUILayout",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.Settings/MoreGUILayout',
-            title:"MoreGUILayout",
-            description:""
-        }
-    );
-    a(
-        {
-            id:16,
-            title:"SafeTools",
-            content:"SafeTools",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib.SafeTools/SafeTools',
-            title:"SafeTools",
-            description:""
-        }
-    );
-    a(
-        {
-            id:17,
-            title:"LogType",
-            content:"LogType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/ADOLib/LogType',
-            title:"LogType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:18,
             title:"Category",
             content:"Category",
             description:'',
@@ -304,29 +206,127 @@ var searchModule = function() {
     );
     a(
         {
-            id:19,
-            title:"Editor",
-            content:"Editor",
+            id:12,
+            title:"SafeGetterHelper",
+            content:"SafeGetterHelper",
             description:'',
             tags:''
         },
         {
-            url:'/api/ADOLib/Editor',
-            title:"Editor",
+            url:'/api/ADOLib.SafeTools/SafeGetterHelper',
+            title:"SafeGetterHelper",
+            description:""
+        }
+    );
+    a(
+        {
+            id:13,
+            title:"Angle AngleType",
+            content:"Angle AngleType",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib/AngleType',
+            title:"Angle.AngleType",
+            description:""
+        }
+    );
+    a(
+        {
+            id:14,
+            title:"SafePatchAttribute",
+            content:"SafePatchAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.SafeTools/SafePatchAttribute',
+            title:"SafePatchAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:15,
+            title:"SafeGetter",
+            content:"SafeGetter",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.SafeTools/SafeGetter_1',
+            title:"SafeGetter<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:16,
+            title:"ForceType",
+            content:"ForceType",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.Settings/ForceType',
+            title:"ForceType",
+            description:""
+        }
+    );
+    a(
+        {
+            id:17,
+            title:"SafeTools",
+            content:"SafeTools",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.SafeTools/SafeTools',
+            title:"SafeTools",
+            description:""
+        }
+    );
+    a(
+        {
+            id:18,
+            title:"Misc",
+            content:"Misc",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.Misc/Misc',
+            title:"Misc",
+            description:""
+        }
+    );
+    a(
+        {
+            id:19,
+            title:"InvalidMode",
+            content:"InvalidMode",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/ADOLib.Settings/InvalidMode',
+            title:"InvalidMode",
             description:""
         }
     );
     a(
         {
             id:20,
-            title:"CategoryAttribute",
-            content:"CategoryAttribute",
+            title:"LogType",
+            content:"LogType",
             description:'',
             tags:''
         },
         {
-            url:'/api/ADOLib.Settings/CategoryAttribute',
-            title:"CategoryAttribute",
+            url:'/api/ADOLib/LogType',
+            title:"LogType",
             description:""
         }
     );
