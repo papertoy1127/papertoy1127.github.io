@@ -1,4 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325625812025354/NanumSquare_acR.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325625660637184/NanumSquare_acL.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325628591407124/NanumSquare_0.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325630051287060/NanumSquare.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967085850165248/NanumBarunGothic.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967088656154625/NanumBarunGothicBold.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967091319799808/NanumBarunGothicUltraLight.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967092686487562/NanumBarunGothicLight.ttf');
+@import url('https://cdn.discordapp.com/attachments/601346284569231408/846969415522320394/D2Coding-Ver1.3.2-20180524-all.ttc')
+  
 /*!
  *   AdminLTE v2.3.8
  *   Author: Almsaeed Studio
@@ -23,7 +33,7 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "나눔바른고딕", "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
@@ -171,7 +181,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "나눔스퀘어_ac", "Roboto", Helvetica, Arial, sans-serif;
 }
 /* General Links */
 
@@ -266,7 +276,7 @@ a:focus {
   background-color: transparent;
   background-image: none;
   padding: 15px 15px;
-  font-family: fontAwesome;
+  font-family: "나눔스퀘어_ac", sans-serif;
 }
 .main-header .sidebar-toggle:before {
   content: "\f0c9";
@@ -306,7 +316,7 @@ a:focus {
   line-height: 50px;
   text-align: center;
   width: 230px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "나눔스퀘어_ac", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 15px;
   font-weight: 300;
   overflow: hidden;
