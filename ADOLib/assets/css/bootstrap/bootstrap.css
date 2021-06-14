@@ -6,6 +6,16 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325625812025354/NanumSquare_acR.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325625660637184/NanumSquare_acL.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325628591407124/NanumSquare_0.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325630051287060/NanumSquare.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967085850165248/NanumBarunGothic.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967088656154625/NanumBarunGothicBold.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967091319799808/NanumBarunGothicUltraLight.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967092686487562/NanumBarunGothicLight.ttf');
+@import url('https://cdn.discordapp.com/attachments/601346284569231408/846969415522320394/D2Coding-Ver1.3.2-20180524-all.ttc')
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1523,7 +1533,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "D2Coding", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
