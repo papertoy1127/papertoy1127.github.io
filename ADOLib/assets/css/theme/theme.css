@@ -1,3 +1,13 @@
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325625812025354/NanumSquare_acR.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325625660637184/NanumSquare_acL.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325628591407124/NanumSquare_0.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846325630051287060/NanumSquare.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967085850165248/NanumBarunGothic.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967088656154625/NanumBarunGothicBold.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967091319799808/NanumBarunGothicUltraLight.ttf');
+@import url('https://cdn.discordapp.com/attachments/845510108665479178/846967092686487562/NanumBarunGothicLight.ttf');
+@import url('https://cdn.discordapp.com/attachments/601346284569231408/846969415522320394/D2Coding-Ver1.3.2-20180524-all.ttc')
+
 body.layout-boxed {
   background-image: none;
   background-color: #f4f4f4;
@@ -97,7 +107,7 @@ h1 {
   background-color: #2e6da4;
 }
 .main-header .navbar .navbar-toggle {
-  font-family: "fontAwesome";
+  font-family: "나눔스퀘어_ac", sans-serif;
 }
 .main-header .navbar .navbar-toggle:before {
   content: "\f0c9";
@@ -321,7 +331,7 @@ h1 {
   /* Font Awesome */
   margin-left: 0.3em;
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "나눔스퀘어_ac", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
