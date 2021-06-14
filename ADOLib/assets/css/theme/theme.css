@@ -127,6 +127,7 @@ h1 {
   background-color: #337ab7;
   color: #fff;
   border-bottom: 0 solid transparent;
+  font-weight: 900;
 }
 .main-header .logo:hover {
   background-color: #3278b3;
