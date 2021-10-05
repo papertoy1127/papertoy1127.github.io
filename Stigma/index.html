@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="TemplateData/style.css">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-	
-		* {font-family: 'Tomorrow', sans-serif;}
-		h1 {font-weight: 600; float: top; text-align: center; color: white}
+
+		* {font-family: 'Tomorrow', sans-serif; color: white} 
+		.h11 {font-weight: 600; float: top; text-align: center; font-size: 3em}
 		body {background-color: #252D30}
 		#unity-container {float: top}
+		#description {padding: 0 20%}
+		.hr1 {margin: 10px -10%; height: 0; border: 0; border-top: 2px solid #FFFFFF33}
+		a {font-weight: 600; color: #AA8DBB}
+		footer {text-align: center; color: #FFFFFF99; margin-top: 100px; padding: 10px 0; background-color: #1d1d1d}
+		.h12 {font-weight: 700; font-size: 3em; margin-left: -20px;}
 	</style>
   </head>
   <body>
-	<h1>Stigma Web Demo r9</h1>
-	<br>
+	<h1 class="h11">Stigma Web Demo r9</h1>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1024 height=576></canvas>
       <div id="unity-loading-bar">
@@ -30,11 +34,42 @@
         WebGL builds are not supported on mobile devices.
       </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Stigma</div>
       </div>
     </div>
+	
+	<div id="description">
+		<h1 class="h12">Stigma</h1>
+		흑백 위주 심플한 4키 리듬 게임 (D, F, J, K)
+		<ul>
+		<li>퍼펙트 판정 범위는 8프레임</li>
+		<li>굿 판정 범위는 16프레임</li>
+		<li>배드 판정 범위는 24프레임</li>
+		<li>얼리, 레이트 범위는 각각 6프레임</li>
+		</ul>
+		<hr class="hr1">
+		<h2>ISSUE</h2>
+		<a href="https://github.com/sqUve-kr/STIGMA/issues">레포지토리 이슈 페이지</a><br>
+		위 페이지에서 이슈를 만들고, 참여가 가능합니다.<br>
+		<br>
+		<h3>ISSUE 제목</h3>
+		<ul>
+		<li>[Bug] - 버그 리포트</li>
+		<li>[Suggestion] - 제안</li>
+		<li>[ETC] - 기타 이슈</li>
+		</ul>
+		<hr class="hr1">
+		<h3>Offline Executable Download</h3>
+		<ul>
+		<li>Windows x86: (Comming Soon)</li>
+		<li>Windows x64: (Comming Soon)</li>
+		</ul>
+	</div>
+	
+	<footer>
+Copyright ⓒ 2021. Vanta Games. All Rights Reserved.
+	</footer>
+	
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/we.loader.js";
