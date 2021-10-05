@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Stigma Web Demo</title>
+    <title>Unity WebGL Player | Stigma</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-	
-		* {font-family: 'Tomorrow', sans-serif;}
-		h1 {font-weight: 600; float: top; text-align: center; color: white}
-		body {background-color: #252D30}
-		#unity-container {float: top}
+	@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+	* {font-family: 'Tomorrow', sans-serif;}
+	h1 {font-weight: 600; float: top; text-align: center; color: white}
+	body {background-color: #252D30}
+	#unity-container {float: top}
 	</style>
   </head>
   <body>
-	<div><h1>Stigma Web Demo</h1></div>
+	<h1>Stigma Web Demo</h1>
 	<br>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1024 height=576></canvas>
@@ -30,16 +30,18 @@
         WebGL builds are not supported on mobile devices.
       </div>
       <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Stigma</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl.loader.js";
+      var loaderUrl = buildUrl + "/we.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webgl.data.br",
-        frameworkUrl: buildUrl + "/webgl.framework.js.br",
-        codeUrl: buildUrl + "/webgl.wasm.br",
+        dataUrl: buildUrl + "/we.data.br",
+        frameworkUrl: buildUrl + "/we.framework.js.br",
+        codeUrl: buildUrl + "/we.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "vantaGames",
         productName: "Stigma",
