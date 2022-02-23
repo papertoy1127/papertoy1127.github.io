@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>매우 잡다한 기능들</title>
+    <script src="./color.js"></script>
+    <style>
+        form {margin: 10px}
+        .inputlabel {padding-left: 10px; width: 120px}
+		.subtitle {margin: 5px}
+		.button {width:100%; margin: 5px}
+    </style>
+</head>
+<body>
+<div id="main">
+	<div id="colors">
+    <h2 class="subtitle">Rich Text 그라데이션</h2>
+    <form>
+	<table>
+	<tr><td class="inputlabel" colspan=1>시작 색깔</td><td colspan=2><input type="text" id="colorstart"><br /></td></tr>
+	<tr><td class="inputlabel" colspan=1>끝 색깔</td><td colspan=2><input type="text" id="colorend"><br /></td></tr>
+	<tr><td class="inputlabel" colspan=1>텍스트</td><td colspan=2><input type="text" id="colortext"><br /></td></tr>
+	<tr><td colspan=3><input type="button" class="button" onclick="checkGradient()" value="그라데이션!"><br /></td></tr>
+	<tr><td class="inputlabel" colspan=2><input class="output" type="text" id="coloroutput" readonly=true><br /></td><td><input type="button" onclick="copycontent('coloroutput')" value="복사"></td></tr>
+    </table>
+	</form>
+	</div>
+	
+	<div id="adofaititle">
+    <h2 class="subtitle">ADOFAI 제목 그라데이션</h2>
+    <form>
+	<table>
+	<tr><td class="inputlabel" colspan=1>시작 색깔</td><td colspan=2><input type="text" id="adofaititlestart"><br /></td></tr>
+	<tr><td class="inputlabel" colspan=1>끝 색깔</td><td colspan=2><input type="text" id="adofaititleend"><br /></td></tr>
+	<tr><td class="inputlabel" colspan=1>아티스트</td><td colspan=2><input type="text" id="adofaititleartist"><br /></td></tr>
+	<tr><td class="inputlabel" colspan=1>곡</td><td colspan=2><input type="text" id="adofaititlesong"><br /></td></tr>
+	<tr><td colspan=3><input type="button" class="button" onclick="checkAdofaiGradient()" value="그라데이션!"><br /></td></tr>
+	<tr><td class="inputlabel" colspan=1>아티스트 출력</td><td colspan=1><input class="output" type="text" id="adofaititleartistoutput" readonly=true><br /></td><td><input type="button" onclick="copycontent('adofaititleartistoutput')" value="복사"></td></tr>
+	<tr><td class="inputlabel" colspan=1>곡 출력</td><td colspan=1><input class="output" type="text" id="adofaititlesongoutput" readonly=true><br /></td><td><input type="button" onclick="copycontent('adofaititlesongoutput')" value="복사"></td></tr>
+    </table>
+	</form>
+	</div>
+</div>
+</body>
+</html>
