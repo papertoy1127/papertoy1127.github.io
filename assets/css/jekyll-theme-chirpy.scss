@@ -46,3 +46,7 @@ h1 {
     height: 1px;
     background-color: #BBBBBB;
 }
+
+#archives .year::after {
+    left: 12.5px;
+}
