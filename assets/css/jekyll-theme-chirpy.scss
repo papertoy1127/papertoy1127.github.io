@@ -7,10 +7,6 @@
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 
-body {
-    font-family: 'Pretendard', sans-serif;
-}
-
 #sidebar .site-title {
     font-weight: 600 !important;
 }
@@ -27,13 +23,14 @@ h1 {
     font-weight: 400;
 }
 
+.sidebar-bottom {
+    justify-content: center;
+    margin-right: 10px !important;
+}
+
 #sidebar .fst-italic {
     font-weight: 400;
     font-style: normal !important;
-}
-
-a:has(.fa-x-twitter) {
-    display: none !important;
 }
 
 #post-list article:nth-child(n+2) {
