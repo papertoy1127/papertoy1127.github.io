@@ -63,6 +63,8 @@ h1 {
 @media (max-width: 767px) {
     .giscus-outer {
         border-radius: 0; 
+        width: 100%;
+        margin: 0;
     }
 }
 
