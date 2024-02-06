@@ -1,7 +1,7 @@
 ---
 title: 초보를 위한 프로그래밍 - Prologue
 date: 2024-02-07 00:49:00 +0900
-categories: [초보를 위한 프로그래밍]
+categories: [연재글, 초보를 위한 프로그래밍]
 tags: []     # TAG names should always be lowercase
 toc: false
 comments: true
