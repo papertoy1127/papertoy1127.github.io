@@ -50,3 +50,22 @@ h1 {
 #archives .year::after {
     left: 12.5px;
 }
+
+.giscus-outer {
+    background-color: #F5F5F5; 
+    border-radius: 20px; 
+    padding: 40px 20px 12px 20px;
+    margin: 0 -20px; 
+    text-align: center;
+    width: calc(100% + 40px);
+}
+
+@media (max-width: 767px) {
+    .giscus-outer {
+        border-radius: 0; 
+    }
+}
+
+.post-tail-wrapper {
+    border-bottom: 0 !important;
+}
