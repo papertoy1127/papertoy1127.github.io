@@ -252,12 +252,12 @@ td {
 
 .footnote:target {
     background-color: #dfdfdf;
-
-    > a {
-        background-color: #dfdfdf;
-    }
 }
 
+
+.footnote:target > a:first-child {
+    background-color: #dfdfdf !important;
+}
 
 .footnote > a:first-child {
     position: absolute;
