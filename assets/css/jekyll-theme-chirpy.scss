@@ -306,13 +306,13 @@ td {
      }
 }
 
-article .content a:not(.footnote *):not([target="_blank"]) {
+article .content a:not(.footnote *):not(.fn-link):not([target="_blank"]) {
     color: #6A7CBF  !important;
     border-bottom: 2px dotted #6A7CBF  !important;
     transition: all 0.05s;
 }
 
-article .content a:not(.footnote *):not([target="_blank"]):hover {
+article .content a:not(.footnote *):not(.fn-link):not([target="_blank"]):hover {
     color: #061E77  !important;
     border-bottom: 2px dotted #061E77   !important;
 }
