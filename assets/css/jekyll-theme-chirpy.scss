@@ -201,14 +201,6 @@ h1 {
     width: calc(100% + 40px);
 }
 
-@media (max-width: 767px) {
-    .giscus-outer {
-        border-radius: 0; 
-        width: 100%;
-        margin: 0;
-    }
-}
-
 .post-tail-wrapper {
     border-bottom: 0 !important;
 }
@@ -228,4 +220,99 @@ th {
 .prompt-info p {
     margin-top: -1px;
     padding-bottom: 1px;
+}
+
+figure {
+    width: 80%; 
+    margin: 0 auto; 
+    margin-bottom: 5px; 
+    text-align: center; 
+}
+
+td {
+    padding: auto !important;
+}
+
+.footnote {
+    font-size: 0.9rem;  
+    background-color: #e9e9e9;
+    padding: 1.5rem 1rem 1rem 1rem;
+    margin: 1rem 0.5rem 1rem;
+    border-radius: .625rem ;
+    position: relative;
+}
+
+.footnote:target {
+    background-color: #dfdfdf;
+
+    > a {
+        background-color: #dfdfdf;
+    }
+}
+
+
+.footnote > a {
+    position: absolute;
+    left: 0rem;
+    top: -0.5rem;
+    width: 2rem;
+    height: 1rem;
+    text-indent: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #666666;
+    z-index: 1;
+    background-color: #e9e9e9;
+    border-radius: 2rem 2rem 0 0;
+    text-align: center;
+}
+
+.fn-link {
+    background-color: #EEEEEE;
+    padding: 1px 2px;
+    border-radius: 6px;
+    font-family: "Monoplex KR";
+    color: #666666 !important;
+    font-weight: 500;
+    transition: all 0.05s !important;
+
+    a {
+       color: #555555 !important;
+    }
+    position: relative;
+    font-size: 0.8em;
+    top: -0.4em
+}
+
+.fn-link:hover {
+    background-color: #E9E9E9;
+    transition: all 0.05s !important;
+
+    a {
+        color: #222222 !important;
+     }
+
+     a:hover {
+        color: #222222 !important;
+     }
+}
+
+a {
+    border-bottom: 0 !important;
+}
+
+@media (max-width: 850px) {
+    .giscus-outer {
+        border-radius: 0; 
+        width: calc( 100vw );
+        margin: 0 -20px;
+        flex-shrink: 0;
+    }
+
+    figure {
+        width: 100%; 
+        margin: 0 auto; 
+        margin-bottom: 5px; 
+        text-align: center; 
+    }
 }
