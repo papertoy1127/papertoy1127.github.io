@@ -6,6 +6,8 @@ tags: []     # TAG names should always be lowercase
 toc: true
 comments: true
 ---
+<hr>
+## 컴퓨터의 처리 과정
 
 **프로그래밍**은 쉽게 말해서, <U>컴퓨터에게 일을 시키는 과정입니다</U>. 그렇다면 컴퓨터가 무엇인지 알아야 일을 시킬 수 있을 것입니다.
 
@@ -42,8 +44,9 @@ comments: true
 
 그래서, 컴퓨터는 비트 여러 개를 묶어서 **바이트**로 칭하고, 각각의 계산은 무조건 바이트 단위로 하게 됩니다. 일반적으로 바이트는 비트 8개를 묶어서 사용합니다. 그러니까, 하나의 바이트는 2<sup>8</sup>개, 즉 0-255까지의 수를 나타낼 수 있습니다. 일종의 256진법이라고 부를 수도 있겠네요.
 
+<br>
 <hr>
-
+## 두 바이트의 덧셈
 이제 다시 아까 이야기했던 메모리로 들어가봅시다. 메모리는 앞서 말했듯 기억 장치입니다. 그리고 그 기억 장치에 컴퓨터는 수를 바이트 단위로 저장합니다. 메모리라는 공간에 각 칸이 있는데, 그 칸이 바이트라고 비유해도 좋겠습니다. 그리고 각 칸을 구분하기 위해 숫자가 붙어 있는데, 이것을 주소라고 부릅니다.
 
 <figure>
@@ -53,7 +56,7 @@ comments: true
 <td>값</td><td>00110101</td><td>00001000</td><td>01011101</td><td>00101110</td>
 </tr>
 </table>
-  <figcaption style="color: gray; font-weight: 600; font-size: 0.8em; margin-top: -20px">표를 통해 대강 메모리를 나타내 보았습니다.<div style="font-size:0.8em; margin-top: -8px">뭐라고요? 1부터 시작한다고요?</div></figcaption>
+  <figcaption>표를 통해 대강 메모리를 나타내 보았습니다.<div style="font-size:0.8em; margin-top: -8px">뭐라고요? 1부터 시작한다고요?</div></figcaption>
 </figure>
 
 이제 덧셈을 해 봅시다. 덧셈을 하려면 더할 두 개의 숫자가 필요합니다. 우리는 아까 그 숫자들이 이 문서에 써 있었지만, 컴퓨터 입장에서 보자면 메모리밖에 가진 게 없습니다. 그러니까, 메모리에 우리가 더할 숫자를 넣어주면 되겠습니다. 메모리의 1번지에 `0b01`을 넣고, 2번지에 `0b10`을 넣어줍시다. 10진법으로 따지면 각각 1과 2가 되겠죠.
@@ -62,10 +65,10 @@ comments: true
 <table class="font-mspace" style="margin: 0 auto">
 <th>주소</th><th>1</th><th>2</th><th>3</th><th>4</th>
 <tr>
-<td>값</td><td>00000001</td><td>00000010</td><td>01011101</td><td>00101110</td>
+<td>값</td><td style="background-color: #EEFFEE">00000001</td><td style="background-color: #EEFFEE">00000010</td><td>01011101</td><td>00101110</td>
 </tr>
 </table>
-  <figcaption style="color: gray; font-weight: 600; font-size: 0.8em; line-spacing: 0.6em; margin-top: -20px">이제 메모리에는 1과 2가 있습니다.</figcaption>
+  <figcaption>이제 메모리에는 1과 2가 있습니다.</figcaption>
 </figure>
 
 다음은 덧셈을 시킬 차례입니다. 실제로 컴퓨터 내에서 덧셈이 어떻게 작동하는지는 우리가 알 필요가 없습니다. 아무리 저수준의 프로그래밍이라 하더라도, 덧셈 정도는 컴퓨터가 알아서 해 줍니다. 컴퓨터에서 실제로 덧셈을 진행하는 건 CPU인데, 우리가 여기에 명령을 내리면 컴퓨터가 해당하는 작업을 해 줄 것입니다. (어떻게 내리는지는 아마도 이 강좌의 범위를 벗어날 것입니다.)
@@ -78,10 +81,10 @@ CPU에 1번지와 2번지의 값을 더하라는 명령을 해 봅시다. 그럼
 <table class="font-mspace" style="margin: 0 auto">
 <th>주소</th><th>1</th><th>2</th><th>3</th><th>4</th>
 <tr>
-<td>값</td><td>00000001</td><td>00000010</td><td>00000011</td><td>00101110</td>
+<td>값</td><td>00000001</td><td>00000010</td><td style="background-color: #EEFFEE">00000011</td><td>00101110</td>
 </tr>
 </table>
-  <figcaption style="color: gray; font-weight: 600; font-size: 0.8em; line-spacing: 0.6em; margin-top: -20px">0b01 + 0b10 = 0b11!</figcaption>
+  <figcaption>0b01 + 0b10 = 0b11!</figcaption>
 </figure>
 
 드디어 컴퓨터에게서 1과 2를 더한 결과를 얻을 수 있었습니다. 
@@ -92,8 +95,10 @@ CPU에 1번지와 2번지의 값을 더하라는 명령을 해 봅시다. 그럼
 
 오늘의 글은 여기서 마치도록 하겠습니다. 감사합니다.
 
-<hr>
-
+<br>
+<hr style="margin-bottom: -10px">
+<span class="hide-next">a</span>
+## 각주
 <div class="footnote" id="fn-1"><a href="#rfn-1">↑</a> <sup>1</sup> 숫자를 세는 방법을 의미합니다. 본문에 나온 10진법과 2진법을 예시로 들면, 10진법은 0, 1, ..., 8, 9 총 10개의 숫자를 사용하여 수를 표기하기에 10진법이라 이름붙었습니다. 2진법은 마찬가지로 0, 1 두 개의 숫자만을 이용하기에 2진법이라 이름붙고요.<br><br>
 프로그래밍을 하다 보면, 16진법도 자주 보게 될 것입니다. 16진법은 0, 1, ..., 8, 9까지 10진법과 같이 가다가, 10-15까지의 수를 나타내기 위해 a, b, c, d, e, f라는 숫자를 사용합니다. 그러니까, 10진법의 27은, 16진법으로 1B로 표기됩니다.<br><br>
 2진법이든 10진법이든 16진법이든, 모두 공통적으로 포함되는 숫자들이 있기에 혼동의 여지가 있습니다. 이를 좀 더 명확히 하기 위해 앞에 접두어를 붙여 표기합니다. 2진법은 `0b1010`, 16진법은 `0x3f9a`, 그리고 자주 쓰이지는 않지만 8진법은 `0o3201`와 같은 식으로요. 10진법에는 접두어가 따로 없습니다. 그러므로 이제부터 접두어가 붙어있지 않은 숫자가 보인다면, 기본적으로 10진법이라고 생각하셔도 무방하겠습니다.</div>

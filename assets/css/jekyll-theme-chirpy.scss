@@ -224,9 +224,17 @@ th {
 
 figure {
     width: 80%; 
-    margin: 0 auto; 
+    margin: 0 auto;
+    padding: 20px 0; 
     margin-bottom: 5px; 
     text-align: center; 
+}
+
+figcaption {
+    color: gray; 
+    font-weight: 600; 
+    font-size: 0.8em;
+    margin-top: -20px
 }
 
 td {
@@ -237,7 +245,7 @@ td {
     font-size: 0.9rem;  
     background-color: #e9e9e9;
     padding: 1.5rem 1rem 1rem 1rem;
-    margin: 1rem 0.5rem 1rem;
+    margin: 2rem 0.5rem 1rem;
     border-radius: .625rem ;
     position: relative;
 }
@@ -251,7 +259,7 @@ td {
 }
 
 
-.footnote > a {
+.footnote > a:first-child {
     position: absolute;
     left: 0rem;
     top: -0.5rem;
@@ -265,6 +273,7 @@ td {
     background-color: #e9e9e9;
     border-radius: 2rem 2rem 0 0;
     text-align: center;
+    border: 0 !important;
 }
 
 .fn-link {
@@ -297,8 +306,49 @@ td {
      }
 }
 
-a {
-    border-bottom: 0 !important;
+article .content a:not(.footnote *):not([target="_blank"]) {
+    color: #6A7CBF  !important;
+    border-bottom: 2px dotted #6A7CBF  !important;
+    transition: all 0.05s;
+}
+
+article .content a:not(.footnote *):not([target="_blank"]):hover {
+    color: #061E77  !important;
+    border-bottom: 2px dotted #061E77   !important;
+}
+
+.content a[target="_blank"]::before {
+    content: "\f360";
+    font-family: 'Font Awesome 6 Free';
+    font-weight:600;
+    font-size: 0.9em;
+    position: relative;
+    padding-right: 0.2rem;
+}
+
+.content a[target="_blank"] {
+    color: #49a358;
+    border-bottom: 2px dotted #49a358 !important;
+    transition: all 0.05s;
+}
+
+.content a[target="_blank"]:hover {
+    color: #A34994 !important;
+    border-bottom: 2px dotted #A34994  !important;
+}
+
+hr + h1, hr + h2, hr + h3, hr + h4, hr + h5, hr + h6 {
+    margin-top: 25px;
+}
+
+p:has(.hide-next) {
+    display: none;
+}
+
+p:has(.hide-next) + h2 {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 850px) {
