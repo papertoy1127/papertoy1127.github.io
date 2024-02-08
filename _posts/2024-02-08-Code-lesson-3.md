@@ -112,7 +112,7 @@ int main() {
 <code>c = a + b;</code>는 두 개의 명령으로 나누어서 볼 수 있습니다. 첫 번째는 <code>a + b</code>로, a와 b를 더하라는 명령입니다. 
 <br><br>
 1장에서 이야기했듯, 두 수를 더하는 것만으로는 아무 것도 할 수 없습니다.
-그렇기에 `c = a + b;`라는 대입식을 사용해서, c에 <code>a + b</code>의 결과 값을 대입한 것입니다.
+그렇기에 <code>c = a + b;</code>라는 대입식을 사용해서, <code>c</code>에 <code>a + b</code>의 결과 값을 대입한 것입니다.
 </blockquote>
 <div style="margin-left: 10px;background-color: black; border-radius: .675rem; margin-bottom: 1rem" class="hide-mobile">
 <iframe width="300" height="360" src="/posts/Code-lesson-1#두-바이트의-덧셈" style="opacity: 0.96; height: 100%"></iframe>
@@ -132,8 +132,8 @@ printf 안에 있는 `"%d"`는 무엇일까요? 이 부분이 지금껏 줄곧 �
     <th>형태</th><th>종류</th>
     <tr><td>%d</td><td>부호 있는 정수</td></tr>
     <tr><td>%u</td><td>부호 없는 정수</td></tr>
-    <tr><td>%o</td><td>부호 있는 정수를 8진법으로 출력</td></tr>
-    <tr><td>%x</td><td>부호 있는 정수를 16진법으로 출력</td></tr>
+    <tr><td>%o</td><td>부호 없는 정수를 8진법으로 출력</td></tr>
+    <tr><td>%x</td><td>부호 없는 정수를 16진법으로 출력</td></tr>
     <tr><td>%c</td><td>문자</td></tr>
     </table>
 </figure>
