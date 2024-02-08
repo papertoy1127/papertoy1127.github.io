@@ -77,8 +77,13 @@ h1 {
 
 .content code, .content kbd, .content pre, .content samp  {
     font-family: 'Ligature', 'Monoplex KR Wide Nerd', monospace !important;
+}
+
+.content code {
     color: var(--bs-code-color) !important;
     background-color: var(--inline-code-bg);
+    padding: 3px 5px;
+    border-radius: 4px;;
 }
 
 th {
@@ -310,5 +315,9 @@ details[open] summary ~ * {
         margin: 0 auto; 
         margin-bottom: 5px; 
         text-align: center; 
+    }
+
+    .hide-mobile {
+        display: none;
     }
 }

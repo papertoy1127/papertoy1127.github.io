@@ -1,6 +1,6 @@
 ---
 title: 3. 자료형과 변수, 그리고 연산 (1)
-date: 2024-02-08 11:53:00 +0900
+date: 2024-02-08 11:51:00 +0900
 categories: [연재글, 초보를 위한 프로그래밍]
 tags: []     # TAG names should always be lowercase
 toc: true
@@ -101,16 +101,21 @@ int main() {
 아래의 설명은 [1장의 해당 부분](/posts/Code-lesson-1#두-바이트의-덧셈)과 비교하면서 보시는 것을 추천합니다.<br>
 <small>아래에 설명하지 않은 부분에 대해서는 각주<a href="#fn-3" id="rfn-3">3</a>에 설명해 두었습니다.<br>다만, 아래에서 설명하지 않은 부분을 지금 이해하지 못 한다 하더라도 큰 지장은 없습니다.</small>
 
-> `char a;`와 `char b, c;`는 변수를 선언하는 부분입니다. 쉼표를 통해서 같은 자료형의 변수를 여러 개 선언할 수 있습니다.
-> 
-> `a = 1;`은 a에 1을 대입하는 부분입니다. 마찬가지로 `b = 2;`는 b에 2를 대입하는 부분입니다. 
-> 
-> `c = a + b;`는 두 개의 명령으로 나누어서 볼 수 있습니다. 첫 번째는 `a + b`로, a와 b를 더하라는 명령입니다. 
->
-> 1장에서 이야기했듯, 두 수를 더하는 것만으로는 아무 것도 할 수 없습니다.<br>그렇기에 `c = a + b;`라는 대입식을 사용해서, c에 `a + b`의 결과 값을 대입한 것입니다.
-{: .prompt-block }
-
-<br>
+<div style="display: flex; flex-direction: row">
+<blockquote class="prompt-block">
+<code>char a;</code>와 <code>char b, c;</code>는 변수를 선언하는 부분입니다. 쉼표를 통해서 같은 자료형의 변수를 여러 개 선언할 수 있습니다.
+<br><br>
+<code>a = 1;</code>은 a에 1을 대입하는 부분입니다. 마찬가지로 <code>b = 2;</code>는 b에 2를 대입하는 부분입니다. 
+<br><br>
+<code>c = a + b;</code>는 두 개의 명령으로 나누어서 볼 수 있습니다. 첫 번째는 <code>a + b</code>로, a와 b를 더하라는 명령입니다. 
+<br><br>
+1장에서 이야기했듯, 두 수를 더하는 것만으로는 아무 것도 할 수 없습니다.
+그렇기에 `c = a + b;`라는 대입식을 사용해서, c에 <code>a + b</code>의 결과 값을 대입한 것입니다.
+</blockquote>
+<div style="margin-left: 10px;background-color: black; border-radius: .675rem; margin-bottom: 1rem" class="hide-mobile">
+<iframe src="/posts/Code-lesson-1#두-바이트의-덧셈" style="opacity: 0.96; height: 100%"></iframe>
+</div>
+</div>
 
 이제 마지막으로 남은 부분은 `printf("%d", c);`입니다. 
 
