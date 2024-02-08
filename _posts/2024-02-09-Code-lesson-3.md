@@ -97,7 +97,7 @@ int main() {
 }
 ```
 
-아래의 설명은 [1장의 해당 부분](../Code-lesson-1#두-바이트의-덧셈)과 비교하면서 보시는 것을 추천합니다.<br>
+아래의 설명은 [1장의 해당 부분](/posts/Code-lesson-1#두-바이트의-덧셈)과 비교하면서 보시는 것을 추천합니다.<br>
 <small>아래에 설명하지 않은 부분에 대해서는 각주<a href="#fn-3" id="rfn-3">3</a>에 설명해 두었습니다.<br>다만, 아래에서 설명하지 않은 부분을 지금 이해하지 못 한다 하더라도 큰 지장은 없습니다.</small>
 
 > `int a, b, c;`는 변수를 선언하는 부분입니다. 이렇게 쉼표를 통해서 같은 자료형의 변수를 여러 개 선언할 수 있습니다.
@@ -153,7 +153,7 @@ printf 안에 있는 `"%d"`는 무엇일까요? 이 부분이 지금껏 줄곧 �
 > <span class="font-mspace">printf("%c", 65);</span>는 어떤 결과를 출력할까요?
 > <details style="margin-top: -15px">
 >    <summary>정답 보기</summary>
->    <p style="margin: -2px 0.5rem">정답은 <code>A</code>입니다. 이유가 궁금하시다면, <a href="../Code-lesson-2##컴퓨터에서의-문자-저장">2장</a>을 참고하세요.</p>
+>    <p style="margin: -2px 0.5rem">정답은 <code>A</code>입니다. 이유가 궁금하시다면, <a href="/posts/Code-lesson-2#컴퓨터에서의-문자-저장">2장</a>을 참고하세요.</p>
 > </details>
 {: .prompt-tip }
 
