@@ -9,18 +9,19 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   /* Framework color */
   --main-bg: rgb(27, 27, 30);
   --mask-bg: rgb(68, 69, 70);
-  --main-border-color: rgb(44, 45, 45);
+  --main-border-color: #888990;
 
   /* Common color */
-  --text-color: rgb(175, 176, 177);
+  --text-color: #e0e0e0;
   --text-muted-color: #868686;
   --text-muted-hightlight-color: #aeaeae;
-  --heading-color: #cccccc;
+  --heading-color: #f9f9f9;
   --label-color: #a7a7a7;
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
-  --link-color: rgb(138, 180, 248);
-  --link-underline-color: rgb(82, 108, 150);
+  --link-color: #BFAD6A ;
+  --link-color-hover: #989E34;
+  --link-underline-color: var(--link-color);
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--text-color);
@@ -67,17 +68,15 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
-  --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: #1e1e1e;
-  --card-hovor-bg: #464d51;
-  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.24) 0 0 0 1px;
+  --card-bg: var(--main-bg);
+  --card-hovor-bg: #303030;
+  --card-shadow: 0;
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
   --kbd-bg-color: #242424;
-  --prompt-text-color: rgb(216, 212, 212, 0.75);
+  --prompt-text-color: #e9e9e9bc;
   --prompt-tip-bg: rgb(22, 60, 36, 0.64);
   --prompt-tip-icon-color: rgb(15, 164, 15, 0.81);
   --prompt-info-bg: rgb(7, 59, 104, 0.8);
@@ -86,6 +85,12 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --prompt-warning-icon-color: rgb(255, 165, 0, 0.8);
   --prompt-danger-bg: rgb(86, 28, 8, 0.8);
   --prompt-danger-icon-color: #cd0202;
+  --prompt-block-bg: #292929;
+  --code-color: #f663b4;
+  --external-link: #C3C17D;
+  --external-link-hover: #A67DC3;
+  --footnote-bg: #222425;
+  --footnote-target-bg: rgb(38, 43, 69);
 
   /* tags */
   --tag-border: rgb(59, 79, 88);
@@ -167,8 +172,9 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --label-color: #585858;
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #757575;
-  --link-color: #0056b2;
-  --link-underline-color: #dee2e6;
+  --link-color: #6A7CBF;
+  --link-color-hover: #061E77;
+  --link-underline-color: var(--link-color);
   --button-bg: #ffffff;
   --btn-border-color: #e9ecef;
   --btn-backtotop-color: #686868;
@@ -216,10 +222,9 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --toc-highlight: #0550ae;
   --btn-share-color: gray;
   --btn-share-hover-color: #0d6efd;
-  --card-bg: #ffffff;
+  --card-bg: var(--main-bg);
   --card-hovor-bg: #e2e2e2;
   --card-shadow: 0;
-  --footnote-target-bg: lightcyan;
   --tb-odd-bg: #fbfcfd;
   --tb-border-color: #eaeaea;
   --dash-color: silver;
@@ -235,6 +240,12 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --prompt-warning-icon-color: #ef9c03;
   --prompt-danger-bg: rgb(248, 215, 218, 0.56);
   --prompt-danger-icon-color: #df3c30;
+  --prompt-block-bg: #eeeeee;
+  --code-color: #b61364;
+  --external-link: #49a358;
+  --external-link-hover: #A34994;
+  --footnote-bg: #efefef;
+  --footnote-target-bg: #f1e7dc;
 
   /* Tags */
   --tag-border: #dee2e6;

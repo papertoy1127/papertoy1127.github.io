@@ -114,7 +114,7 @@ int main() {
 1장에서 이야기했듯, 두 수를 더하는 것만으로는 아무 것도 할 수 없습니다.
 그렇기에 <code>c = a + b;</code>라는 대입식을 사용해서, <code>c</code>에 <code>a + b</code>의 결과 값을 대입한 것입니다.
 </blockquote>
-<div style="margin-left: 10px;background-color: black; border-radius: .675rem; margin-bottom: 1rem" class="hide-mobile">
+<div style="margin-left: 10px;background-color: var(--heading-color); border-radius: .675rem; margin-bottom: 1rem" class="hide-mobile">
 <iframe width="300" height="360" src="/posts/Code-lesson-1#두-바이트의-덧셈" style="opacity: 0.96; height: 100%"></iframe>
 </div>
 </div>
