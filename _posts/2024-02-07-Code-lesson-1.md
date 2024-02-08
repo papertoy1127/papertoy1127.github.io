@@ -65,7 +65,7 @@ comments: true
 <table class="font-mspace" style="margin: 0 auto">
 <th>주소</th><th>1</th><th>2</th><th>3</th><th>4</th>
 <tr>
-<td>값</td><td style="background-color: #EEFFEE">00000001</td><td style="background-color: #EEFFEE">00000010</td><td>01011101</td><td>00101110</td>
+<td>값</td><td style="background-color: var(--cell-highlight-g)">00000001</td><td style="background-color: var(--cell-highlight-g)">00000010</td><td>01011101</td><td>00101110</td>
 </tr>
 </table>
   <figcaption>이제 메모리에는 1과 2가 있습니다.</figcaption>
@@ -81,7 +81,7 @@ CPU에 1번지와 2번지의 값을 더하라는 명령을 해 봅시다. 그럼
 <table class="font-mspace" style="margin: 0 auto">
 <th>주소</th><th>1</th><th>2</th><th>3</th><th>4</th>
 <tr>
-<td>값</td><td>00000001</td><td>00000010</td><td style="background-color: #EEFFEE">00000011</td><td>00101110</td>
+<td>값</td><td>00000001</td><td>00000010</td><td style="background-color: var(--cell-highlight-g)">00000011</td><td>00101110</td>
 </tr>
 </table>
   <figcaption>0b01 + 0b10 = 0b11!</figcaption>

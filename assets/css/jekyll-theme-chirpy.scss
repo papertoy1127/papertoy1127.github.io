@@ -156,35 +156,23 @@ td {
     border: 0 !important;
 }
 
-a[id^="rfn-"], .fn-link {
-    background-color: #EEEEEE;
+a[id^="rfn-"] {
+    background-color: var(--footnote-bg);
     padding: 1px 2px;
     border-radius: 6px;
     font-family: "Monoplex KR";
-    color: #666666 !important;
+    color: var(--prompt-text-color) !important;
     font-weight: 500;
     transition: all 0.05s !important;
     border: 0 !important;
-
-    a {
-       color: #555555 !important;
-    }
     position: relative;
     font-size: 0.8em;
     top: -0.4em
 }
 
-a[id^="rfn-"]:hover, .fn-link:hover {
-    background-color: #E9E9E9;
+a[id^="rfn-"]:hover {
+    background-color: var(--footnote-target-bg);
     transition: all 0.05s !important;
-
-    a {
-        color: #222222 !important;
-     }
-
-     a:hover {
-        color: #222222 !important;
-     }
 }
 
 article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_blank"]) {

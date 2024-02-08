@@ -36,7 +36,7 @@ comments: true
 <table class="font-mspace" style="margin: 0 auto">
 <th>주소</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
 <tr>
-<td>값</td><td style="background-color: #EEFFEE">00000111</td><td style="background-color: #EEFFEE">11101000</td><td style="background-color: #EEFFEE">00011011</td><td style="background-color: #EEFFEE">01101100</td><td>01011101</td><td>11010110</td>
+<td>값</td><td style="background-color: var(--cell-highlight-g)">00000111</td><td style="background-color: var(--cell-highlight-g)">11101000</td><td style="background-color: var(--cell-highlight-g)">00011011</td><td style="background-color: var(--cell-highlight-g)">01101100</td><td>01011101</td><td>11010110</td>
 </tr>
 </table>
   <figcaption>십진법으로는 1-2칸은 2024, 3-4칸은 7020을 각각 나타냅니다.</figcaption>
@@ -48,7 +48,7 @@ comments: true
 <table class="font-mspace" style="margin: 0 auto">
 <th>주소</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
 <tr>
-<td>값</td><td>00000111</td><td>11101000</td><td>00011011</td><td>01101100</td><td style="background-color: #EEFFEE">00100011</td><td style="background-color: #EEFFEE">01010100</td>
+<td>값</td><td>00000111</td><td>11101000</td><td>00011011</td><td>01101100</td><td style="background-color: var(--cell-highlight-g)">00100011</td><td style="background-color: var(--cell-highlight-g)">01010100</td>
 </tr>
 </table>
   <figcaption>십진법으로 5-6칸은 2020 + 7020 = 9044를 나타냅니다.</figcaption>

@@ -33,6 +33,6 @@ window.onload = function() {
     document.getElementById('giscus-script').appendChild(giscusScript);
 
     document.getElementsByClassName('mode-toggle')[0].addEventListener('click', function() {
-        location.href = location.href;
+        location.reload();
     })
 }
