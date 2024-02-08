@@ -1,6 +1,4 @@
 window.onload = function() {
-    console.log("asdfasdasdaff")
-
     const lightTheme = 'noborder_light';
     const darkTheme = 'noborder_dark';
 
@@ -30,7 +28,9 @@ window.onload = function() {
     Object.entries(giscusAttributes).forEach(([key, value]) =>
     giscusScript.setAttribute(key, value)
     );
-    document.getElementById('giscus-script').appendChild(giscusScript);
+    try {
+        document.getElementById('giscus-script').appendChild(giscusScript);
+    } catch { }
 
     document.getElementsByClassName('mode-toggle')[0].addEventListener('click', function() {
         location.reload();
