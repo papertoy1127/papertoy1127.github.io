@@ -113,7 +113,7 @@ int main() {
 그렇기에 `c = a + b;`라는 대입식을 사용해서, c에 <code>a + b</code>의 결과 값을 대입한 것입니다.
 </blockquote>
 <div style="margin-left: 10px;background-color: black; border-radius: .675rem; margin-bottom: 1rem" class="hide-mobile">
-<iframe src="https://p4per.dev/posts/Code-lesson-1#두-바이트의-덧셈" style="opacity: 0.96; height: 100%"></iframe>
+<iframe src="https://p4per.dev/posts/Code-lesson-1#두-바이트의-덧셈" style="opacity: 0.96; height: 100%">Code-lesson-1</iframe>
 </div>
 </div>
 
