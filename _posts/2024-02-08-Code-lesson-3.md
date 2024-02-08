@@ -1,6 +1,6 @@
 ---
 title: 3. 자료형과 변수, 그리고 연산 (1)
-date: 2024-02-08 11:43:00 +0900
+date: 2024-02-08 11:48:00 +0900
 categories: [연재글, 초보를 위한 프로그래밍]
 tags: []     # TAG names should always be lowercase
 toc: true
