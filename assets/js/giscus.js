@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload += function() {
     console.log("asdfasdasdaff")
 
     const lightTheme = 'noborder_light';
