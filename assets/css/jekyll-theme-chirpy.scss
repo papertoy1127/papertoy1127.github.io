@@ -140,7 +140,7 @@ td {
     border: 0 !important;
 }
 
-.fn-link {
+a[id^="rfn-"], .fn-link {
     background-color: #EEEEEE;
     padding: 1px 2px;
     border-radius: 6px;
@@ -158,7 +158,7 @@ td {
     top: -0.4em
 }
 
-.fn-link:hover {
+a[id^="rfn-"]:hover, .fn-link:hover {
     background-color: #E9E9E9;
     transition: all 0.05s !important;
 
@@ -171,13 +171,13 @@ td {
      }
 }
 
-article .content a:not(.footnote *):not(.fn-link):not([target="_blank"]) {
+article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_blank"]) {
     color: #6A7CBF  !important;
     border-bottom: 2px dotted #6A7CBF  !important;
     transition: all 0.05s;
 }
 
-article .content a:not(.footnote *):not(.fn-link):not([target="_blank"]):hover {
+article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_blank"]):hover {
     color: #061E77  !important;
     border-bottom: 2px dotted #061E77   !important;
 }
@@ -193,13 +193,33 @@ article .content a:not(.footnote *):not(.fn-link):not([target="_blank"]):hover {
 
 .content a[target="_blank"] {
     color: #49a358;
-    border-bottom: 2px dotted #49a358 !important;
+    border-bottom: 0.1rem dotted #49a358 !important;
     transition: all 0.05s;
 }
 
 .content a[target="_blank"]:hover {
     color: #A34994 !important;
-    border-bottom: 2px dotted #A34994  !important;
+    border-bottom: 0.1rem dotted #A34994  !important;
+}
+
+.content b, .content strong {
+    font-weight: 600;
+}
+
+.content u {
+    text-decoration-line: none;
+    position: relative
+}
+
+.content u::after {
+    content: "";
+    display: block;
+    text-decoration-line: none;
+    border-bottom: 0.08rem solid;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0.04rem;
 }
 
 hr + h1, hr + h2, hr + h3, hr + h4, hr + h5, hr + h6 {
