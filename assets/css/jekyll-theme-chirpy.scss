@@ -71,10 +71,14 @@ h1 {
 
 .font-mspace {
     font-family: 'Ligature', 'Monoplex KR Wide Nerd', monospace;
+    font-size: .875em;
+    word-wrap: break-word;
 }
 
-code, kbd, pre, samp  {
+.content code, .content kbd, .content pre, .content samp  {
     font-family: 'Ligature', 'Monoplex KR Wide Nerd', monospace !important;
+    color: var(--bs-code-color) !important;
+    background-color: var(--inline-code-bg);
 }
 
 th {
@@ -92,6 +96,10 @@ figure {
     padding: 20px 0; 
     margin-bottom: 5px; 
     text-align: center; 
+}
+
+figure * {
+    margin: 0 auto; 
 }
 
 figcaption {
@@ -235,6 +243,59 @@ p:has(.hide-next) + h2 {
     margin: 0;
     padding: 0;
 }
+
+.prompt-block {
+    font-size: 0.95em;  
+    background-color: #e9e9e9;
+    padding: 1em !important;
+    color: #222222 !important;
+    border-radius: .625rem ;
+    position: relative;
+}
+
+details {
+}
+
+summary::marker {
+    display: none;
+}
+
+details[open] > summary::before {
+    transform: rotate(90deg) !important;
+    -webkit-transform: rotate(90deg);
+}
+
+summary::before {
+    content: "\f152";
+    font-family: 'Font Awesome 6 Free';
+    font-weight:600;
+    font-size: 0.9em;
+    margin-right: 0.3em;
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+summary {
+    display: inherit;
+}
+
+details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+}
+  
+  details[close] summary ~ * {
+    animation: close 0.3s ease-in-out;
+}
+@keyframes open {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes close {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+  
 
 @media (max-width: 850px) {
     .giscus-outer {
