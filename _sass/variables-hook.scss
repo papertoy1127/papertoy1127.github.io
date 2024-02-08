@@ -94,7 +94,9 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --footnote-bg: #222425;
   --footnote-target-bg: rgb(38, 43, 69);
 
-  --cell-highlight-g: #003300;
+  --cell-highlight-r: #331f1f;
+  --cell-highlight-g: #1f331f;
+  --cell-highlight-b: #1f1f33;
 
   /* tags */
   --tag-border: rgb(59, 79, 88);
@@ -253,7 +255,9 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --footnote-bg: #efefef;
   --footnote-target-bg: #f1e7dc;
 
+  --cell-highlight-r: #ffdddd;
   --cell-highlight-g: #ddffdd;
+  --cell-highlight-b: #ddddff;
 
   /* Tags */
   --tag-border: #dee2e6;
