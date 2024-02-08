@@ -1,5 +1,7 @@
 function set_cookie(name, value) {
-    document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + 'max-age=' + 86400*30 + ';path=/;samesite=None;secure';
+    var date = new Date();
+    date.setTime(date.getTime() + 86400000*30*6);
+    document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + ';expires=' + date.toUTCString() + ';path=/' + ';samesite=strict';
 }
 
 //쿠키 값 가져오는 함수
