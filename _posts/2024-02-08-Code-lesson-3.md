@@ -66,11 +66,11 @@ type_name variable_name;
 C에서의 정수 자료형
     <table class="tb1">
     <th>이름</th><th>종류</th><th>부호</th><th>길이</th>
-    <tr><td>char</td><td>정수, 문자</td><td rowspan=4>부호 없는</td><td>1바이트 정수</td></tr>
+    <tr><td>char</td><td>정수, 문자</td><td rowspan=4>부호 있는</td><td>1바이트 정수</td></tr>
     <tr><td>short</td><td rowspan=7>정수</td><td>2바이트 정수</td></tr>
     <tr><td>int</td><td>4바이트 정수</td></tr>
     <tr><td>long</td><td>8바이트 정수</td></tr>
-    <tr><td>unsigned char</td><td rowspan=4>부호 있는</td><td>1바이트 정수</td></tr>
+    <tr><td>unsigned char</td><td rowspan=4>부호 없는</td><td>1바이트 정수</td></tr>
     <tr><td>unsigned short</td><td>2바이트 정수</td></tr>
     <tr><td>unsigned int</td><td>4바이트 정수</td></tr>
     <tr><td>unsigned long</td><td>8바이트 정수</td></tr>
