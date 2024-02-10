@@ -135,3 +135,59 @@
     font-style: normal;
     unicode-range: U+0021, U+002A, U+002D, U+002F, U+003C, U+003D, U+003E, U+003F, U+005E, U+007C, U+007E;
 }
+
+@font-face {
+    font-family : 'IBM Plex Sans Italic';
+    font-weight: 100;
+    src : url(/assets/fonts/IBMPlexSansItalic/IBMPlexSans-ThinItalic.ttf) format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'IBM Plex Sans Italic';
+    font-weight: 200;
+    src : url(/assets/fonts/IBMPlexSansItalic/IBMPlexSans-ExtraLightItalic.ttf) format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'IBM Plex Sans Italic';
+    font-weight: 300;
+    src : url(/assets/fonts/IBMPlexSansItalic/IBMPlexSans-LightItalic.ttf) format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'IBM Plex Sans Italic';
+    font-weight: 400;
+    src : url(/assets/fonts/IBMPlexSansItalic/IBMPlexSans-RegularItalic.ttf) format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'IBM Plex Sans Italic';
+    font-weight: 500;
+    src : url(/assets/fonts/IBMPlexSansItalic/IBMPlexSans-MediumItalic.ttf) format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'IBM Plex Sans Italic';
+    font-weight: 600;
+    src : url(/assets/fonts/IBMPlexSansItalic/IBMPlexSans-SemiBoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'IBM Plex Sans Italic';
+    font-weight: 700;
+    src : url(/assets/fonts/IBMPlexSansItalic/IBMPlexSans-BoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-display: swap;
+}

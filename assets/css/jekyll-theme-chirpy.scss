@@ -186,6 +186,13 @@ article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_
     border-bottom: 2px dotted var(--link-color-hover) !important;
 }
 
+article .content em, article .content i {
+    display: inline-block;
+    font-family: 'IBM Plex Sans Italic', 'Pretendard', sans-serif !important;
+    -webkit-transform: rotate(0.04deg);
+    transform: rotate(0.04deg);
+}
+
 .content a[target="_blank"]::before {
     content: "\f360";
     font-family: 'Font Awesome 6 Free';
@@ -249,9 +256,6 @@ p:has(.hide-next) + h2 {
     position: relative;
 }
 
-details {
-}
-
 summary::marker {
     display: none;
 }
@@ -286,6 +290,12 @@ details[open] summary ~ * {
 
 *:has(.mode-toggle:hover) *:not(.mode-toggle) {
     transition: all 0s !important;
+}
+
+rt {
+    position: relative;
+    bottom: -0.2em;
+    font-size: 0.8em;
 }
 
 @keyframes open {
