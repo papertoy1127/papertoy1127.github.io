@@ -14,7 +14,6 @@
 
 body {
     font-feature-settings: 'ss01', 'ss02', 'ss05', 'ss07', 'ss08';
-    word-break: keep-all;
 }
 
 h1 {
@@ -188,10 +187,12 @@ article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_
 }
 
 article .content em, article .content i {
-    display: inline-block;
-    font-family: 'IBM Plex Sans Italic', 'Pretendard', sans-serif !important;
-    -webkit-transform: rotate(0.04deg);
-    transform: rotate(0.04deg);
+    :not(.fa-classic, .fa-solid, .fa-regular, .far, .fas) {
+        display: inline-block;
+        font-family: 'IBM Plex Sans Italic', 'Pretendard', sans-serif !important;
+        -webkit-transform: rotate(0.04deg);
+        transform: rotate(0.04deg);
+    }
 }
 
 .content a[target="_blank"]::before {
