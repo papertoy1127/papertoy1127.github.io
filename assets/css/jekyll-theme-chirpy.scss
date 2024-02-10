@@ -14,6 +14,7 @@
 
 body {
     font-feature-settings: 'ss01', 'ss02', 'ss05', 'ss07', 'ss08';
+    word-break: keep-all;
 }
 
 h1 {
@@ -208,8 +209,9 @@ article .content em, article .content i {
     transition: all 0.05s;
 }
 
+
 .content a[target="_blank"]:hover {
-    color: var(--external-link-hover) !important;
+    color: var(--external-link) !important;
     border-bottom: 0.1rem dotted var(--external-link-hover) !important;
 }
 
@@ -256,6 +258,23 @@ p:has(.hide-next) + h2 {
     position: relative;
 }
 
+.prompt-update {
+    background-color: var(--prompt-update-bg);
+}
+
+.prompt-update span {
+    position: relative;
+    top: 0;
+    display: inline;
+}
+
+blockquote.prompt-update::before {
+    content: "\f017";
+    color: var(--prompt-update-icon-color);
+    font: var(--fa-font-solid);
+    margin-top: 0.42rem;
+}
+
 summary::marker {
     display: none;
 }
@@ -269,15 +288,18 @@ summary::before {
     content: "\f152";
     font-family: 'Font Awesome 6 Free';
     font-weight:600;
-    font-size: 0.9em;
-    margin-right: 0.3em;
-    position: relative;
     display: inline-block;
     transition: all 0.2s;
+    position: relative;
+    left: -0.3em;
+    font-size: 0.9em;
 }
 
 summary {
-    display: inherit;
+    position: relative;
+    padding-left: 0.3em;
+    cursor: pointer;
+    display: inline;
 }
 
 details[open] summary ~ * {
@@ -297,6 +319,7 @@ rt {
     bottom: -0.2em;
     font-size: 0.8em;
 }
+
 
 @keyframes open {
     0% { opacity: 0; }

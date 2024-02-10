@@ -88,6 +88,7 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --prompt-danger-bg: rgb(86, 28, 8, 0.8);
   --prompt-danger-icon-color: #cd0202;
   --prompt-block-bg: #292929;
+  --prompt-update-bg: #0b846d;
   --code-color: #f663b4;
   --external-link: #C3C17D;
   --external-link-hover: #A67DC3;
@@ -249,6 +250,8 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --prompt-danger-bg: rgb(248, 215, 218, 0.56);
   --prompt-danger-icon-color: #df3c30;
   --prompt-block-bg: #eeeeee;
+  --prompt-update-bg: rgb(240, 235, 255);
+  --prompt-update-icon-color: #882fd6;
   --code-color: #b61364;
   --external-link: #49a358;
   --external-link-hover: #A34994;
@@ -264,10 +267,6 @@ $font-family-heading: 'Pretendard', sans-serif !important;
   --tag-shadow: var(--btn-border-color);
   --tag-hover: rgb(222, 226, 230);
   --search-tag-bg: #f8f9fa;
-
-  [class^='prompt-'] {
-    --link-underline-color: rgb(219, 216, 216);
-  }
 
   .dark {
     display: none;

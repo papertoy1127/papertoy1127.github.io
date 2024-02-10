@@ -69,15 +69,15 @@ C에서의 정수 자료형
     <tr><td>char</td><td>정수, 문자</td><td rowspan=4>부호 있는</td><td>1바이트 정수</td></tr>
     <tr><td>short</td><td rowspan=7>정수</td><td>2바이트 정수</td></tr>
     <tr><td>int</td><td>4바이트 정수</td></tr>
-    <tr><td>long</td><td>8바이트 정수</td></tr>
+    <tr><td>long long<a href="#fn-2" id="rfn-2">2</a></td><td>8바이트 정수</td></tr>
     <tr><td>unsigned char</td><td rowspan=4>부호 없는</td><td>1바이트 정수</td></tr>
     <tr><td>unsigned short</td><td>2바이트 정수</td></tr>
     <tr><td>unsigned int</td><td>4바이트 정수</td></tr>
-    <tr><td>unsigned long</td><td>8바이트 정수</td></tr>
+    <tr><td>unsigned long long</td><td>8바이트 정수</td></tr>
     </table>
 </figure>
 
-여기서 주의할 점은, 정수와 문자를 나타내는 자료형이 `char`로 동일<a href="#fn-2" id="rfn-2">2</a>하다는 것입니다. 다만, 실제 사용에서는 문자로 사용되는 일이 대체로 더 많으며, 숫자로 사용하는 경우인지 문자로 사용하는 경우인지 별개로 생각하여 처리해주어야 합니다.
+여기서 주의할 점은, 정수와 문자를 나타내는 자료형이 `char`로 동일<a href="#fn-3" id="rfn-3">3</a>하다는 것입니다. 다만, 실제 사용에서는 문자로 사용되는 일이 대체로 더 많으며, 숫자로 사용하는 경우인지 문자로 사용하는 경우인지 별개로 생각하여 처리해주어야 합니다.
 
 <br>
 <hr>
@@ -101,7 +101,7 @@ int main() {
 ```
 
 아래의 설명은 [1장의 해당 부분](/posts/Code-lesson-1#두-바이트의-덧셈)과 비교하면서 보시는 것을 추천합니다.<br>
-<small>아래에 설명하지 않은 부분에 대해서는 각주<a href="#fn-3" id="rfn-3">3</a>에 설명해 두었습니다.<br>다만, 아래에서 설명하지 않은 부분을 지금 이해하지 못 한다 하더라도 큰 지장은 없습니다.</small>
+<small>아래에 설명하지 않은 부분에 대해서는 각주<a href="#fn-4" id="rfn-4">4</a>에 설명해 두었습니다.<br>다만, 아래에서 설명하지 않은 부분을 지금 이해하지 못 한다 하더라도 큰 지장은 없습니다.</small>
 
 <div style="display: flex; flex-direction: row">
 <blockquote class="prompt-block">
@@ -140,7 +140,7 @@ printf 안에 있는 `"%d"`는 무엇일까요? 이 부분이 지금껏 줄곧 �
 
 실제로는 더 상세하고 많은 종류의 서식 지정자가 존재하지만, 지금까지 배운 범위 내에서는 이 정도로도 충분합니다.
 
-그리고 저 프로그램을 컴파일<a href="#fn-4" id="rfn-4">4</a>하고 실행하면, 
+그리고 저 프로그램을 컴파일<a href="#fn-5" id="rfn-5">5</a>하고 실행하면, 
 
 ```console
 3
@@ -172,9 +172,13 @@ printf 안에 있는 `"%d"`는 무엇일까요? 이 부분이 지금껏 줄곧 �
 <span class="hide-next"></span>
 ## 각주
 <div class="footnote" id="fn-1"><a href="#rfn-1">↑</a> <sup>1</sup> 맨 마지막에 오는 세미콜론(;)은 하나의 식이 끝났다는 의미입니다. 많은 프로그래밍 언어에서 동일한 의미로 사용되니 혹시라도 모르셨다면 지금이라도 알아두시면 되겠습니다.</div>
-<div class="footnote" id="fn-2"><a href="#rfn-2">↑</a> <sup>2</sup> C언어와 그 직계라고 할 수 있는 C++ 등의 일부 언어를 제외한다면, 문자와 1바이트 정수를 다루는 자료형은 나뉘어 있습니다. C#을 예로 든다면, 1바이트 정수는 <code>byte</code>이지만 문자는 <code>char</code>로 나타냅니다. (더하여, C#에서는 <code>char</code> 자료형의 크기가 2바이트이기에, <code>byte</code> 자료형과 비교할 때 크기 역시 다릅니다.)</div>
-<div class="footnote" id="fn-3"><a href="#rfn-3">↑</a> <sup>3</sup> 바로 처음에 등장하는 <code>#include &lt;stdio.h&gt;</code>는 stdio.h 헤더를 파일에서 사용(실제로는 포함)하겠다는 의미입니다. 헤더 파일을 포함하면 그 헤더 파일에 있는 코드를 사용할 수 있는데, 여기서는 <code>printf</code>를 사용했습니다.<br><br>
+<div class="footnote" id="fn-2"><a href="#rfn-2">↑</a> <sup>2</sup> 언어마다 다릅니다. 예를 들면 C#과 java에서는, <code>long long</code> 대신 <code>long</code> 자료형으로 8바이트 정수를 나타냅니다. (일반적인 환경의 C에서, <code>long</code>은 <code>int</code>와 같은 의미를 나타냅니다.)</div>
+<div class="footnote" id="fn-3"><a href="#rfn-3">↑</a> <sup>3</sup> C언어와 그 직계라고 할 수 있는 C++ 등의 일부 언어를 제외한다면, 문자와 1바이트 정수를 다루는 자료형은 나뉘어 있습니다. C#이나 java를 예로 든다면, 1바이트 정수는 <code>byte</code>이지만 문자는 <code>char</code>로 나타냅니다. (더하여, C#에서는 <code>char</code> 자료형의 크기가 2바이트이기에, <code>byte</code> 자료형과 비교할 때 크기 역시 다릅니다.)</div>
+<div class="footnote" id="fn-4"><a href="#rfn-4">↑</a> <sup>4</sup> 바로 처음에 등장하는 <code>#include &lt;stdio.h&gt;</code>는 stdio.h 헤더를 파일에서 사용(실제로는 포함)하겠다는 의미입니다. 헤더 파일을 포함하면 그 헤더 파일에 있는 코드를 사용할 수 있는데, 여기서는 <code>printf</code>를 사용했습니다.<br><br>
 <code>int main() ...</code>로 시작하는 부분은 <b>함수</b> 선언입니다. 함수는 일종의 여러 작업을 하나로 묶어둔 것이라고 할 수 있는데, 여기서는 그런 목적으로 사용되지 않았습니다. 이름이 main인 함수는 일반적인 함수와 다른 특별한 목적을 가지고 있는데, 바로 <U>프로그램 시작 지점</U>라는 의미입니다. 많은 코드 중에서 여기부터 읽기 시작해라- 하는 의미라고 받아들여주시면 됩니다.<br><br>
 <code>return 0;</code>은 함수의 반환값을 결정하는 코드입니다. (반환값이 무엇인지 모르신다면 추후 설명할 계획이니, 지금은 일단 무시하고 넘어가셔도 됩니다.) 앞서 main 함수는 특별한 목적을 가지고 있다고 했듯, main 함수의 반환값에도 특별한 의미가 있습니다. main 함수의 반환값이 0인 경우에는 프로그램이 정상 종료되었다는 의미이고, 그렇지 않다면 프로그램이 비정상적으로 종료되었다는 의미입니다. 따라서 <code>return <U>0</U>;</code>이라는 값을 통해 프로그램이 정상 종료되었다는 것을 나타낸 것입니다.</div>
-<div class="footnote" id="fn-4"><a href="#rfn-4">↑</a> <sup>4</sup> 항상 말하듯, 컴퓨터의 모든 것은 2진법 숫자들로 이루어져 있습니다. 프로그램도 예외는 아니죠. 인간이 이해할 수 있는 언어로 쓰여진 프로그램을 컴퓨터가 이해할 수 있는, 0과 1로 이루어진 <b>기계어</b>로 번역하는 것이 <b>컴파일</b> 과정입니다. 그 컴파일 과정을 수행하는 프로그램이 <b>컴파일러</b>이고요.</div>
+<div class="footnote" id="fn-5"><a href="#rfn-5">↑</a> <sup>5</sup> 항상 말하듯, 컴퓨터의 모든 것은 2진법 숫자들로 이루어져 있습니다. 프로그램도 예외는 아니죠. 인간이 이해할 수 있는 언어로 쓰여진 프로그램을 컴퓨터가 이해할 수 있는, 0과 1로 이루어진 <b>기계어</b>로 번역하는 것이 <b>컴파일</b> 과정입니다. 그 컴파일 과정을 수행하는 프로그램이 <b>컴파일러</b>이고요.</div>
 <hr>
+
+> 24/02/10:아앗, C에서는 long이 4바이트고 long long이 8바이트였더라고요. 주 사용 언어가 C#인 저로서는 헷갈릴 수밖에 없었습니다.
+{: .prompt-update }
