@@ -176,13 +176,13 @@ a[id^="rfn-"]:hover {
     transition: all 0.05s !important;
 }
 
-article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_blank"]) {
+article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_blank"]):not(:has(img)) {
     color: var(--link-color)  !important;
     border-bottom: 2px dotted var(--link-underline-color) !important;
     transition: all 0.05s;
 }
 
-article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_blank"]):hover {
+article .content a:not(.footnote *):not(.fn-link):not([id^=rfn-]):not([target="_blank"]):not(:has(img)):hover {
     color: var(--link-color-hover)  !important;
     border-bottom: 2px dotted var(--link-color-hover) !important;
 }

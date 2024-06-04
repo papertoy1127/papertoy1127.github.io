@@ -1,3 +1,6 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css");
+
+
 @font-face {
     font-family : 'Monoplex KR Wide Nerd';
     font-weight: 100;
@@ -193,6 +196,23 @@
 }
 
 @font-face {
+    font-family : 'GowunBatang';
+    font-weight: 400;
+    src : url(/assets/fonts/GowunBatang/GowunBatang-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'GowunBatang';
+    font-weight: 700;
+    src : url(/assets/fonts/GowunBatang/GowunBatang-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
     font-family : 'Hahmlet';
     font-weight: 125 950;
     src : url(/assets/fonts/Hahmlet/Hahmlet.ttf) format('truetype');
@@ -201,6 +221,7 @@
     font-display: swap;
 }
 
+/*
 @font-face {
     font-family : 'Labrada';
     font-weight: 125 950;
@@ -218,3 +239,4 @@
     font-stretch: 75% 125%;
     font-display: swap;
 }
+*/
