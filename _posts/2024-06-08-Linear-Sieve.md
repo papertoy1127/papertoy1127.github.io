@@ -77,7 +77,7 @@ $ \displaystyle \sum_{\scriptstyle p\text{ prime }\atop \scriptstyle p\le n}\fra
 $p' \not\mid q_n$이기 때문에 $\text{spf}(q)$는 $p'$가 될 수 없고, 그렇기에 $\text{spf}(n) \leq \text{spf}(q_n)$이 성립합니다. <br>
 (왜냐하면 $q' < \text{spf}(n)$인 소수였기 때문입니다.)
 
-이제 $n = \text{spf}(n) \cdot q_n$이라는 식을 다시 봅시다. $q_n$이 정해지면, 가능한 $\text{spf}(n)$도 정해지게 되고, 결과적으로 n 역시 정해지게 됩니다.
+이제 $n = \text{spf}(n) \cdot q_n$이라는 식을 다시 봅시다. $q_n$이 정해지면, 가능한 $\text{spf}(n)$도 정해지게 되고, 결과적으로 $n$ 역시 정해지게 됩니다.
 
 후우, 식으로 전개하느라 머리가 아팠으려나요? 그림으로 보면 보다 쉽게 이해가 될 겁니다.
 
