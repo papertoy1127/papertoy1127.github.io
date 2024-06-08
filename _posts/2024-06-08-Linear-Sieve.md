@@ -28,7 +28,7 @@ math: true
 
 $ \displaystyle \sum_{\scriptstyle p\text{ prime}\atop \scriptstyle p\le n} \lfloor \frac{n}{p} \rfloor$ 
  
-인 것을 알 수 있습니다. 물론 이렇게 정리하여도 저것을 계산하는 과정은 쉽지 않고, [소수의 역수의 합의 발산성](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%88%98%EC%9D%98_%EC%97%AD%EC%88%98%EC%9D%98_%ED%95%A9%EC%9D%98_%EB%B0%9C%EC%82%B0%EC%84%B1)과 관련된 다음의 정리에 따라 시간 복잡도를 구할 수 있습니다.
+인 것 역시 알 수 있습니다. 물론 이렇게 정리하여도 저것을 계산하는 과정은 쉽지 않고, [소수의 역수의 합의 발산성](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%88%98%EC%9D%98_%EC%97%AD%EC%88%98%EC%9D%98_%ED%95%A9%EC%9D%98_%EB%B0%9C%EC%82%B0%EC%84%B1)과 관련된 다음의 정리에 따라 시간 복잡도를 구할 수 있습니다.
 
 $ \displaystyle \sum_{\scriptstyle p\text{ prime }\atop \scriptstyle p\le n}\frac1p \ge \ln \ln (n+1) - \ln\frac{\pi^2}6 $
 
@@ -39,7 +39,7 @@ $ \displaystyle \sum_{\scriptstyle p\text{ prime }\atop \scriptstyle p\le n}\fra
 에라토스테네스의 체를 수행 과정을 직접 따라가다 보면 문제점을 알 수 있습니다.
 
 - 먼저 2에 대해서 배수를 지우는 작업을 수행합니다. 4, 6, 8, 10, 12, ...을 이어가며 배수를 지웁니다.
-- 다음으로 3에 대해서 배수를 지우는 작업을 수행합니다. <u>6</u>, 9, <u>12</u>,, 15, ...을 이어가며 배수를 지웁니다.
+- 다음으로 3에 대해서 배수를 지우는 작업을 수행합니다. <u>6</u>, 9, <u>12</u>, 15, ...을 이어가며 배수를 지웁니다.
 - 다음으로 5에 대해서 배수를 지우는 작업을 수행합니다. <u>10</u>, <u>15</u>, <u>20</u>, ...을 이어가며 배수를 지웁니다.
 
 문제점이 보이시나요? 어떤 소수에 대해서, 그 소수보다 작은 소수에서 <u>이미 지워진 수를 다시 지우는 것</u>을 확인할 수 있습니다.  그렇다면 이 어떤 합성수가 한 번만 지워진다는 것을 보장할 수 있다면, 충분히 $O(n)$의 시간 복잡도를 달성할 수 있을 텐데요... 
