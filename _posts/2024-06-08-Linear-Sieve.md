@@ -149,7 +149,9 @@ for i in [2..N]:
             break
 ```
 
-이제, `primes`가 바로 우리가 원하던 소수들의 배열입니다!
+이제, `primes`가 바로 우리가 원하던 소수들의 배열입니다.
+
+이 알고리즘이 바로 선형 체(Linear Sieve), 혹은 오일러가 최초로 사용하였다 하여 오일러의 체(Euler's Sieve)라고 불리우는 알고리즘입니다!
 
 ## 구현
 Python 3 <small style="color: gray">실행 가능한 의사코드다운 모습이네요</small>
