@@ -8,6 +8,15 @@ comments: true
 math: true
 ---
 
+> **이 글을 작성하는 데 참고한 자료**
+> 
+> [MJ Studio님의 블로그](https://ps.mjstudio.net/linear-sieve)<br>
+> 공부하는 과정에 많은 도움이 되었습니다.
+>
+> [Sieve of Eratosthenes (영어 위키백과)](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)<br>
+> 여러 부족한 부분들이나 의문점들에 대한 내용을 해소해 주었습니다.
+{: .prompt-info }
+
 ## 에라토스테네스의 체
 <hr>
 [에라토스테네스의 체](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)는 $n$ 이하의 소수의 리스트를 $O(n\ \text{log}\ \text{log}\ n)$ 시간에 구해주는 알고리즘입니다. 아래와 같이 작동하며, 유명한 알고리즘이니만큼 다들 알고 계실 것이라 생각하며 구현은 생략하겠습니다.
