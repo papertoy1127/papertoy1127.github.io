@@ -162,16 +162,16 @@ sieve = [0] * N
 primes = []
 
 for i in range(2, N):
-if sieve[i] == 0:
-    primes.append(i)
-
-for p in primes:
-    if i*p >= N:
-        break
+    if sieve[i] == 0:
+        primes.append(i)
     
-    sieve[i*p] = 1
-    if (i % p == 0):
-        break
+    for p in primes:
+        if i*p >= N:
+            break
+        
+        sieve[i*p] = 1
+        if (i % p == 0):
+            break
 
 print(primes)
 ```
