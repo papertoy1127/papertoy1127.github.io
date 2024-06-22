@@ -1,6 +1,6 @@
 ---
 title: 유클리드 나눗셈과 나머지
-date: 2024-06-11 19:04:00 +0900
+date: 2029-06-11 19:04:00 +0900
 categories: [PS, 수학]
 tags: []     # TAG names should always be lowercase
 toc: true

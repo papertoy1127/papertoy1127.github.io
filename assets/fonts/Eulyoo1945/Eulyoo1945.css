@@ -1,0 +1,16 @@
+@font-face {
+    font-family : 'Eulyoo1945';
+    font-weight: 400;
+    src : url(/assets/fonts/Eulyoo1945/Eulyoo1945-Regular.ttf) format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Eulyoo1945';
+    font-weight: 600;
+    src : url(/assets/fonts/Eulyoo1945/Eulyoo1945-SemiBold.ttf) format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
