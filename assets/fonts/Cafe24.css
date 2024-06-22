@@ -1,0 +1,7 @@
+@font-face {
+    font-family: '카페24 고운밤';
+    font-weight: 400;
+    src: url('/assets/fonts/Cafe24/Cafe24Oneprettynight-v2.0.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
