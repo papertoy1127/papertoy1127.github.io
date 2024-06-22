@@ -1,0 +1,23 @@
+@font-face {
+    font-family : 'GowunBatang';
+    font-weight: 400;
+    src : url(/assets/fonts/Gowun/GowunBatang-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'GowunBatang';
+    font-weight: 700;
+    src : url(/assets/fonts/Gowun/GowunBatang-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'GowunDodum';
+    font-weight: 400;
+    src : url(/assets/fonts/Gowun/GowunDodum-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
