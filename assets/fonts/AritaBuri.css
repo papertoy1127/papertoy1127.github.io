@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 400;
+    src: url('/assets/fonts/Arita-buri/Arita-buriM.otf') format('otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 300;
+    src: url('/assets/fonts/Arita-buri/Arita-buriL.otf') format('otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 700;
+    src: url('/assets/fonts/Arita-buri/Arita-buriB.otf') format('otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 600;
+    src: url('/assets/fonts/Arita-buri/Arita-buriSB.otf') format('otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 100;
+    src: url('/assets/fonts/Arita-buri/Arita-buriHL.otf') format('otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri HariLine';
+    font-weight: 100;
+    src: url('/assets/fonts/Arita-buri/Arita-buriHL.otf') format('otf');
+    font-style: normal;
+    font-display: swap;
+}
