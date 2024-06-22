@@ -1,6 +1,47 @@
 @font-face {
-    font-family: 'Arita-buri-SemiBold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Arita-buri';
+    font-weight: 400;
+    src: url('/assets/fonts/Arita-buri/Arita-buriM.otf') format('opentype');
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 300;
+    src: url('/assets/fonts/Arita-buri/Arita-buriL.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 700;
+    src: url('/assets/fonts/Arita-buri/Arita-buriB.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 600;
+    src: url('/assets/fonts/Arita-buri/Arita-buriSB.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    font-weight: 100;
+    src: url('/assets/fonts/Arita-buri/Arita-buriHL.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arita-buri HariLine';
+    font-weight: 100;
+    src: url('/assets/fonts/Arita-buri/Arita-buriHL.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
 }

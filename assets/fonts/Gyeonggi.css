@@ -1,0 +1,15 @@
+@font-face {
+    font-family: '경기천년바탕';
+    font-weight: 400;
+    src: url('/assets/fonts/Gyeonggi/Batang_Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '경기천년바탕';
+    font-weight: 700;
+    src: url('/assets/fonts/Gyeonggi/Batang_Bold.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
