@@ -46,8 +46,8 @@ using u128 = __uint128_t;
 <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th>
 <tr>
 <td><img src="/assets/img/solvedac_icon/5.png" alt="Bronze I" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/30503" style="display: inline-block">30503</a></td>
-<td><img src="/assets/img/solvedac_icon/7.png alt="Silver IV" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/2567" style="display: inline-block">2567</a></td>
-<td><img src="/assets/img/solvedac_icon/7.png alt="Silver IV" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/1907" style="display: inline-block">1907</a></td>
+<td><img src="/assets/img/solvedac_icon/7.png" alt="Silver IV" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/2567" style="display: inline-block">2567</a></td>
+<td><img src="/assets/img/solvedac_icon/7.png" alt="Silver IV" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/1907" style="display: inline-block">1907</a></td>
 <td><img src="/assets/img/solvedac_icon/10.png" alt="Silver I" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/26523" style="display: inline-block">26523</a></td>
 <td><img src="/assets/img/solvedac_icon/10.png" alt="Silver I" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/30505" style="display: inline-block">30505</a></td>
 <td><img src="/assets/img/solvedac_icon/11.png" alt="Gold V" style="width: 16px; margin-right: 5px"><a href="https://boj.kr/1083" style="display: inline-block">1083</a></td>
@@ -62,12 +62,12 @@ using u128 = __uint128_t;
 
 그렇게 풀고 "이게 <span><img src="/assets/img/solvedac_icon/10.png" alt="Silver I" style="width: 16px;"></span>이라니, 말도 안 돼."라는 마음가짐으로 <span><img src="/assets/img/solvedac_icon/12.png" alt="Gold IV" style="width: 16px;"></span>를 기여했고, 결과적으로 문제의 티어가 <span><img src="/assets/img/solvedac_icon/11.png" alt="Gold V" style="width: 16px;"></span>이 되었습니다. G5 올솔을 목표로 하신 ohwphil님이 문제를 슥삭하시고 갑자기 '데이터를 추가해주세요'를 날리시는 충격적인 일이 발생하긴 했지만, 어쨌든 문제를 맞은 데다 데추주 데이터에도 옳은 답이 나와서 잘 넘어가게 되었습니다.
 
-### C: <img src="/assets/img/solvedac_icon/7.png alt="Silver IV" style="width: 22px; margin-right: 5px">[탄소 화합물](https://boj.kr/1907)
+### C: <img src="/assets/img/solvedac_icon/7.png" alt="Silver IV" style="width: 22px; margin-right: 5px">[탄소 화합물](https://boj.kr/1907)
 문제를 보시기만 해도 감이 올 것 같습니다. 더러운 파싱 문제입니다. 익숙하지 않은 C++로 파싱 코드 짜는 데만 30분이 넘게 걸렸습니다.
 
-파싱 코드를 짠 다음에는 저걸 어떻게 맞추지... 하고 유클리드 호제법까지 생각했지만, <span><img src="/assets/img/solvedac_icon/7.png alt="Silver IV" style="width: 16px;"></span> 문제가 그렇게 어려운 풀이를 요구할 리가 없다고 믿고 문제를 다시 보니, "계수가 1 이상 10 이하"라는 조건을 발견했습니다. 아하! O(N^3)으로 모든 경우를 체크하며 풀면 되는 거였습니다.
+파싱 코드를 짠 다음에는 저걸 어떻게 맞추지... 하고 유클리드 호제법까지 생각했지만, <span><img src="/assets/img/solvedac_icon/7.png" alt="Silver IV" style="width: 16px;"></span> 문제가 그렇게 어려운 풀이를 요구할 리가 없다고 믿고 문제를 다시 보니, "계수가 1 이상 10 이하"라는 조건을 발견했습니다. 아하! O(N^3)으로 모든 경우를 체크하며 풀면 되는 거였습니다.
 
-### B: <img src="/assets/img/solvedac_icon/7.png alt="Silver IV" style="width: 22px; margin-right: 5px">[색종이 - 2](https://boj.kr/2567)
+### B: <img src="/assets/img/solvedac_icon/7.png" alt="Silver IV" style="width: 22px; margin-right: 5px">[색종이 - 2](https://boj.kr/2567)
 이것도 구현 문제입니다. 그래도 구현 난이도가 다른 문제들보다는 심하지 않아 스무스하게 넘어갔습니다.
 
 100x100짜리 배열을 준비해 놓고, 색종이로 덮인 칸을 1로, 덮이지 않은 칸을 0으로 채워 줍니다. 그리고 각 칸을 순회하며 상하좌우에 있는 모서리 길이를 모두 더해주면 전체 색종이의 모서리 길이를 알 수 있습니다.
