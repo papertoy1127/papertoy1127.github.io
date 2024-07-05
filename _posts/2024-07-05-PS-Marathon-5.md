@@ -2,7 +2,7 @@
 title: solved.ac 마라톤 - 5주차
 date: 2024-07-05 11:47:00 +0900
 categories: [PS, Marathon]
-tags: []     # TAG names should always be lowercase
+tags: []
 toc: true
 comments: true
 math: true
