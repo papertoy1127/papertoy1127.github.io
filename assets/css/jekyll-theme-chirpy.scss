@@ -347,6 +347,37 @@ rt {
     font-size: 1.2rem;
 }
 
+boj-problem {
+    display: inline-flex;
+	flex-direction: row;
+    width: fit-content;
+}
+
+boj-problem a {
+    border-bottom: 0 !important;
+    font-weight: 600;
+}
+
+boj-problem a:hover span {
+    color: var(--link-color-hover) !important;
+}
+
+.post-preview boj-problem a {
+    color: inherit;
+    font-weight: 400;
+}
+
+boj-problem img {
+    width: 0.95em;
+    margin-right: 0.2em;
+    margin-top: -0.05em;
+}
+
+tier-icon img {
+    width: 0.95em;
+    margin-top: -0.05em;
+}
+
 @keyframes open {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -385,3 +416,5 @@ rt {
         font-size: 1rem
     }
 }
+
+/* Solved.ac tags */
