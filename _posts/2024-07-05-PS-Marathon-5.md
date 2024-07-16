@@ -114,6 +114,6 @@ S = 1일때부터 차근차근 해 보았습니다. 가능한 한 가장 큰 원
 
 G번 풀 때는 std::set(트리셋)을 처음으로 써 보았습니다. 의미 있는 시간이었어요.
 
-<img src="/assets/img/marathon_5th/marathon_5th.svg" alt="마라톤 완주!">
+<img src="/assets/img/marathon_5th/marathon_5th.png" alt="마라톤 완주!">
 
 그렇게 시작한지 12시간만에 완주에 성공했습니다!
