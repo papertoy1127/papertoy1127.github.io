@@ -1,6 +1,6 @@
 ---
 title: 1. 나눗셈과 공약수
-date: 2025-02-26 14:47:00 +0900
+date: 2025-02-27 12:50:00 +0900
 categories: [정수론 개론]
 tags: []     # TAG names should always be lowercase
 toc: true
