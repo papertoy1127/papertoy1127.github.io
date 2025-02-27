@@ -70,7 +70,7 @@ $a$를 $b$로 나눈 몫과 나머지를 각각 $q_1, r_1$이라고 할 때 $a =
         \text{Step 2.} & b = r_1 q_2 + r_2 & ... & d \mid r_2 \\
         \text{Step 3.} & r_1 = r_2 q_3 + r_3 & ... & d \mid r_3 \\
         \vdots \\
-        \text{Step n-2.} & r_{n-2} = r_{n-1} q_n + r_n & ... & d \mid r_n \\
+        \text{Step n.} & r_{n-2} = r_{n-1} q_n + r_n & ... & d \mid r_n \\
     \end{array}$$ <br></span></span>
 
 이때 1)에 의해 $r_n \mid d$이고 2)에 의해 $d \mid r_n$이므로 $r_n = d$.
