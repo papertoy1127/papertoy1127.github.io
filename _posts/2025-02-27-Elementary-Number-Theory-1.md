@@ -9,7 +9,7 @@ math: true
 ---
 
 ## 나눗셈 정리
-정수 $a, b (b \neq 0)$에 대해 $a = bq+r\ (0 \leq r < \left | b \right |)$인 정수 $q, r$가 유일하게 존재한다.
+정수 $a, b\ (b \neq 0)$에 대해 $a = bq+r\ (0 \leq r \lt \left \vert b \right \vert)$인 정수 $q, r$가 유일하게 존재한다.
 
 이때 $q := \text{quotient(몫)}$, $r = \text{remainder/residue(나머지)}$로 정의한다.
 
@@ -81,5 +81,4 @@ $a$를 $b$로 나눈 몫과 나머지를 각각 $q_1, r_1$이라고 할 때 $a =
 > **강의에서 다루지는 않았으나 책에 있는 내용**
 > 
 > 다음 역시 모두 성립한다: $\gcd(a, b) = \gcd(\pm a, \pm b) = \gcd(a, b + na) $ ($n$은 임의의 정수)
-> 
-{: .prompt-info }
+{: .prompt-tip }

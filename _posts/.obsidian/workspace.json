@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "7b91ba6cdac9b928",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6d82bf1c5dda1b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7da911c4b1adab7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cc7d9bed1d04ab8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf136937c61a271f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "025304b68f18c18e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "acf8acd59bd79707",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "8976108a5fc02629",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f328022b3135d440",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6ef1b5aa0e859f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d23010e011185ec9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2025-03-28-PS-Diary-30913.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-03-28-PS-Diary-30913 의 백링크"
+            }
+          },
+          {
+            "id": "340990a07f1e6e36",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2025-03-28-PS-Diary-30913.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2025-03-28-PS-Diary-30913 의 나가는 링크"
+            }
+          },
+          {
+            "id": "398bd80eddf041de",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "f391f2b7770a4a12",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2025-03-28-PS-Diary-30913.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2025-03-28-PS-Diary-30913 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "f7da911c4b1adab7",
+  "lastOpenFiles": [
+    "2025-05-25.md",
+    "2024-07-16-PS-Diary-1083.md",
+    "2025-03-28-PS-Diary-30913.md",
+    "2024-10-07-PS-Diary-32234.md",
+    "2024-08-30-PS-Diary-32148.md",
+    "2025-02-27-Elementary-Number-Theory-2.md",
+    "2025-02-27-Elementary-Number-Theory-1.md",
+    "exc.2024-08-07-Legendre-formula-and-binomial-coeff.md",
+    "exc.2024-08-07-Wilson-theorem-and-composite.md",
+    "2024-06-15-PS-Diary-2055.md",
+    "2024-06-05-PS-Diary-1353.md",
+    "2024-06-05-PS-Diary-0.md",
+    "2024-02-06-Welcome.md",
+    "2024-02-28-Math-1.md",
+    "2024-07-06-OMCB014.md",
+    "2024-06-10-Extended-Euclidean.md",
+    "2024-06-08-Linear-Sieve.md"
+  ]
+}
