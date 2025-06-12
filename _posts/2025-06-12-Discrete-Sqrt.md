@@ -50,7 +50,6 @@ def discrete_sqrt(n, p):
     w0 = 1
     while pow(w0, (p-1)//2, p) == 1: w0 += 1
     w0 = pow(w0, (p-1)//t, p)
-    w = w0*w0 % p
 
     m = pow(n, (p-1)//t, p)
     s = 1
