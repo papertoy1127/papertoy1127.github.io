@@ -56,7 +56,7 @@ def discrete_sqrt(n, p):
     s = 1
     for i in range(k-2, -1, -1):
         if pow(m, 1 << i, p) != 1:
-            s *= w0
+            s = s*w0 % p
             m = m*w0*w0 % p
         w0 = w0*w0 % p
     
