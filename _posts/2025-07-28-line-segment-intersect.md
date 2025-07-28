@@ -31,7 +31,7 @@ $$ \begin{bmatrix} \Delta x_p & -\Delta x_q \\ \Delta y_p & -\Delta y_q \end{bma
 - $t, u \in [0, 1]$ 조건을 만족하는지
 
 이다. 편의상 $$A := \begin{bmatrix} \Delta x_p & -\Delta x_q \\ \Delta y_p & -\Delta y_q \end{bmatrix}$$로 두겠다.
-따라서 $\det A = {\small \Delta x_p \Delta y_q - \Delta x_q \Delta y_p}$에 따라 여러 경우를 나눈다.
+따라서 $\det A = {\small -\Delta x_p \Delta y_q + \Delta x_q \Delta y_p}$에 따라 여러 경우를 나눈다.
 
 먼저 $\det A = 0$인 경우이다. 이 경우에는 $\frac{\Delta y_p}{\Delta x_p} = \frac{\Delta y_q}{\Delta x_q}$처럼 기울기가 일치하는 경우로, 두 선분은 평행하거나 같은 직선 위에 있다. 
 - 같은 직선 위에 있지 않다면 절대 만날 수 없다.
@@ -49,29 +49,29 @@ $$ \begin{bmatrix} t \\ u \end{bmatrix} = A^{-1} \begin{bmatrix} x_2 - x_0 \\ y_
 위를 구현한 Python 코드로 마치겠다.
 
 ```py
-def intersect(a0, a1, b0, b1):
-    if a0 > a1: a0, a1 = a1, a0
-    if b0 > b1: b0, b1 = b1, b0
+def intersect(p0, p1, q0, q1):
+    if p0 > p1: p0, p1 = p1, p0
+    if q0 > q1: q0, q1 = q1, q0
 
-    dxa = a1[0]-a0[0]; dya = a1[1]-a0[1]
-    dxb = b1[0]-b0[0]; dyb = b1[1]-b0[1]
-    xba = a0[0]-b0[0]; yba = a0[1]-b0[1]
-    det = -dxa*dyb+dxb*dya
+    dxp = p1[0]-p0[0]; dyp = p1[1]-p0[1]
+    dxq = q1[0]-q0[0]; dyq = q1[1]-q0[1]
+    xqp = p0[0]-q0[0]; yqp = p0[1]-q0[1]
+    det = -dxp*dyq+dxq*dyp
     
     if det == 0:
-        if dxa*yba != dya*xba: return (0, -1) # 평행
-        if a1 < b0 or b1 < a0: return (0, -1) # 겹치지 않음
-        if a1 == b0: return (1, a1) # 양 끝 점이 겹침
-        if b1 == a0: return (1, b1)
+        if dxp*yqp != dyp*xqp: return (0, -1) # 평행
+        if p1 < q0 or q1 < p0: return (0, -1) # 겹치지 않음
+        if p1 == q0: return (1, p1) # 양 끝 점이 겹침
+        if q1 == p0: return (1, q1)
         return (2, -1) # 일부분이 겹침
 
-    detp = dyb*xba-dxb*yba
-    detq = dya*xba-dxa*yba
+    det_t = dyq*xqp-dxq*yqp
+    det_u = dyp*xqp-dxp*yqp
 
-    if det < 0: det, detp, detq = -det, -detp, -detq
+    if det < 0: det, det_t, det_u = -det, -det_t, -det_u
 
-    if detp < 0 or detp > det: return (0, -1)
-    if detq < 0 or detq > det: return (0, -1)
+    if det_t < 0 or det_t > det: return (0, -1)
+    if det_u < 0 or det_u > det: return (0, -1)
 
-    return (1, (a0[0]+dxa*detp/det, a0[1]+dya*detp/det))
+    return (1, (p0[0]+dxp*det_t/det, p0[1]+dyp*det_t/det))
 ```
