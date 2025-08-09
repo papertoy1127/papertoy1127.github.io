@@ -12,11 +12,11 @@ math: true
 
 Cyclic convolution은 주어진 길이 $N$의 두 수열 $f: f_0, f_1, \cdots, f_{N-1}$와 $g: g_0, g_1, \cdots, g_{N-1}$에 대해 
 
-$$ (f \ast g)_k = \sum_{\substack{i + j \equiv k \\ \small \pmod N}} f_i \cdot g_j $$
+$$ (f \ast g)_k = \sum_{\substack{i + j \equiv k \\ \small \pmod N}} f_i \cdot g_j \newcommand\widehatfix[1]{\widehat{#1\hspace{1px}}} $$
 
 를 만족하는 새로운 수열 $(f \ast g)$를 결과로 하는 연산이다. 이러한 연산은 $f(x) = \sum\limits_{\small i=0}^{\small N-1} f_i x^i, g(x) = \sum\limits_{\small i=0}^{\small N-1} g_i x^i$에 대해 $f(x)g(x) \bmod {x^N-1}$를 구하는 것과 같다고 할 수 있다. 
 
-논의를 좀 더 편리하게 이어나가기 위해 $f$와 $g$를 수열이 아니라 벡터라고 생각하자. 벡터 $f$를 이산 푸리에 변환한 것을 ${\cal F}[f]$라고 할 때, ${\cal F}[f \ast g] = {\cal F}[f] \odot {\cal F}[g]$임이 널리 알려져 있다. 여기서 $\odot$은 Hadamard product, 즉 원소끼리 곱한 것을 의미한다. 이러한 푸리에 변환은 행렬로 나타낼 수 있다. 따라서 ${\cal F}[f] = Af$를 만족하는 행렬 $A$가 존재한다. (이는 푸리에 변환이 선형변환이라는 사실에서 기인한다.) 
+논의를 좀 더 편리하게 이어나가기 위해 $f$와 $g$를 수열이 아니라 벡터라고 생각하자. 벡터 $f$를 이산 푸리에 변환한 것을 $\widehat{f}$라고 할 때, $\widehat{f \ast g} = \widehat{f} \odot \widehatfix{g}$임이 널리 알려져 있다. 여기서 $\odot$은 Hadamard product, 즉 원소끼리 곱한 것을 의미한다. 이러한 푸리에 변환은 행렬로 나타낼 수 있다. 따라서 $\widehat{f} = Af$를 만족하는 행렬 $A$가 존재한다. (이는 푸리에 변환이 선형변환이라는 사실에서 기인한다.) 
 
 그렇다면, 반대로 이러한 합성곱 식으로부터 행렬 $A$를 도출할 수 있을까? 즉, $A(f \ast g) = (Af) \odot (Ag)$인 행렬 $A$를 찾을 수 있을까? 
 
@@ -27,7 +27,7 @@ $$ (A(f \ast g))_k = \sum_{x=0}^{N-1} A_{k,x} (f \ast g)_x $$
 를 만족해야 한다. 이때 정의에 의해 $$(f \ast g)_x = \sum\limits_{\small i\oplus j = x} f_i \cdot g_j$$이다. (편의상 $i+j \bmod N$ 대신 $i\oplus j$로 표기했다.) 따라서 
 
 $$ \begin{aligned} & (A(f \ast g))_k = \sum_{x=0}^{N-1} A_{k,x} (f \ast g)_x \\
-= &\ \sum_{x=0}^{N-1} A_{k,x} \sum\limits_{\small i\oplus j = x} f_i \cdot g_j \\
+= &\ \sum_{x=0}^{N-1} A_{k,x} \sum_{i\oplus j = x} f_i \cdot g_j \\
 = &\ \sum_{i=0}^{N-1} \sum_{j=0}^{N-1} A_{k,i \oplus j} (f_i \cdot g_i) \end{aligned} $$
 
 가 된다. 마찬가지로 $((Af) \odot (Ag))_k$는
