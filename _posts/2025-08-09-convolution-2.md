@@ -8,7 +8,7 @@ comments: true
 math: true
 ---
 
-이 글에서 수열과 벡터, 행렬 등은 특별한 언급이 없다면 0-index를 사용한다.
+[이전 글](/posts/convolution-2/)에서 이어진다.
 
 XOR convolution은 Cyclic convolution과 비슷하지만, 인덱스의 $+ \bmod N$이 아니라 $\oplus$ (bitwise XOR) 연산을 통해 정의된다. 즉,
 
