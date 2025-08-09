@@ -33,7 +33,7 @@ $$ \begin{aligned} & (A(f \ast g))_k = \sum_{x \in (\mathbf{Z}_2)^n} A_{k,x} (f 
 이고, 
 
 $$ \begin{aligned} & ((Af) \odot (Ag))_k = (Af)_k \cdot (Ag)_k \\
-= &\ \left(\sum_{i \in (\mathbf{Z}_2)^n} A_{k,i} f_i\right)\left(\sum_{j \in (\mathbf{Z}_2)^n} A_{k,j} g_j\right) \\
+= &\ \bigg(\sum_{i \in (\mathbf{Z}_2)^n} A_{k,i} f_i\bigg)\bigg(\sum_{j \in (\mathbf{Z}_2)^n} A_{k,j} g_j\bigg) \\
 = &\ \sum_{i \in (\mathbf{Z}_2)^n} \sum_{j \in (\mathbf{Z}_2)^n} (A_{k,i} A_{k,j})(f_i \cdot g_j) \end{aligned} $$
 
 이므로 이전의 
@@ -47,6 +47,6 @@ $$ \sum_{i \in (\mathbf{Z}_2)^n} \sum_{j \in (\mathbf{Z}_2)^n} A_{k,i \oplus j}(
 - $\chi(0+i) = \chi(0) \chi(i)$이므로 $\chi(0) = 1$이다.
 - $i \oplus i = 0$이므로 $\chi(0) = \chi(i \oplus i) = \chi(i)^2 = 1$이다. 따라서 $\chi(i) = \pm 1$이다.
 
-또 $(Z_2)^n$ 위의 원소 $i$는 $n$개의 기저들의 선형 결합으로 나타낼 수 있고, 따라서 기저들에 대한 함숫값을 정하면 전체 $\chi$도 정해질 것이다. 각각의 기저는 $1$과 $-1$ 두 종류의 값을 가질 수 있으므로 총 $2^n$가지의 $\chi$를 구할 수 있다. 마지막으로 이러한 $\chi$들이 Hadamard matrix의 행벡터들과 같다는 것도 확인할 수 있다.
+또 $(\mathbb{Z}_2)^n$ 위의 원소 $i$는 $n$개의 기저들의 선형 결합으로 나타낼 수 있고, 따라서 기저들에 대한 함숫값을 정하면 전체 $\chi$도 정해질 것이다. 각각의 기저는 $1$과 $-1$ 두 종류의 값을 가질 수 있으므로 총 $2^n$가지의 $\chi$를 구할 수 있다. 마지막으로 이러한 $\chi$들이 Hadamard matrix의 행벡터들과 같다는 것도 확인할 수 있다.
 
 이전 글에서는 인덱스들이 $$(\mathbb{Z}_n, +)$$, 이 글에서는 $$((\mathbb{Z}_2)^n, \oplus)$$ 위에 있는 경우의 convolution을 분석하였다. 이러한 방법론을 다른 일반적인 가환군, 나아가서 비가환군이나 모노이드에도 적용할 수 있지 않을까..? 예를 들면, $$((\mathbb{Z}_2)^n, \lor)$$ 모노이드 (bitwise or) 위에서의 convolution 같은 것 말이다.
