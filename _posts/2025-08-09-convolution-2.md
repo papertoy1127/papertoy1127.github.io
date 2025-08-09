@@ -1,6 +1,6 @@
 ---
 title: "[Convolution & Transform] 2. WHT와 XOR convolution"
-date: 2025-08-09 01:25 +0900
+date: 2025-08-10 00:44 +0900
 categories: [algorithm, 수학, Convolution & Transform]
 tags: []
 toc: true
@@ -40,7 +40,7 @@ $$ \begin{aligned} & ((Af) \odot (Ag))_k = (Af)_k \cdot (Ag)_k \\
 
 $$ \sum_{i \in (\mathbf{Z}_2)^n} \sum_{j \in (\mathbf{Z}_2)^n} A_{k,i \oplus j}(f_i \cdot g_i) =\sum_{i \in (\mathbf{Z}_2)^n} \sum_{j \in (\mathbf{Z}_2)^n} (A_{k,i} A_{k,j})(f_i \cdot g_j) $$
 
-라는 식을 그대로 사용할 수 있다. ($i, j$가 어디에 속하는지를 제외하면 완전히 동일한 논리 전개가 가능하다!) 따라서 역시나 $A_{k,x} = \chi_k(x)$라고 두자. 이번에는 $\chi(i \oplus j) = \chi(i) \chi(j)$라는 식을 얻을 수 있다. 이번에는 $\mathbb{Z}_n$이 아닌  $(\mathbb{Z}_2)^n \rightarrow \mathbb{C}^\times$의 homomorphism 형태가 나왔다. 
+라는 식을 그대로 사용할 수 있다. (인덱스 $i, j$가 어디에 속하는지를 제외하면 완전히 동일한 논리 전개가 가능하다!) 따라서 역시나 $A_{k,x} = \chi_k(x)$라고 두자. 이번에는 $\chi(i \oplus j) = \chi(i) \chi(j)$라는 식을 얻을 수 있다. 이번에는 $\mathbb{Z}_n$이 아닌  $(\mathbb{Z}_2)^n \rightarrow \mathbb{C}^\times$의 homomorphism 형태가 나왔다. 
 
 이번에도 선형 독립인 $\chi$들을 $2^n$개 구해야 한다. 저번처럼 바로 보이지는 않으므로 식을 정리해보자. 
 
@@ -48,3 +48,5 @@ $$ \sum_{i \in (\mathbf{Z}_2)^n} \sum_{j \in (\mathbf{Z}_2)^n} A_{k,i \oplus j}(
 - $i \oplus i = 0$이므로 $\chi(0) = \chi(i \oplus i) = \chi(i)^2 = 1$이다. 따라서 $\chi(i) = \pm 1$이다.
 
 또 $(Z_2)^n$ 위의 원소 $i$는 $n$개의 기저들의 선형 결합으로 나타낼 수 있고, 따라서 기저들에 대한 함숫값을 정하면 전체 $\chi$도 정해질 것이다. 각각의 기저는 $1$과 $-1$ 두 종류의 값을 가질 수 있으므로 총 $2^n$가지의 $\chi$를 구할 수 있다. 마지막으로 이러한 $\chi$들이 Hadamard matrix의 행벡터들과 같다는 것도 확인할 수 있다.
+
+이전 글에서는 인덱스들이 $$(\mathbb{Z}_n, +)$$, 이 글에서는 $$((\mathbb{Z}_2)^n, \oplus)$$ 위에 있는 경우의 convolution을 분석하였다. 이러한 방법론을 다른 일반적인 가환군, 나아가서 비가환군이나 모노이드에도 적용할 수 있지 않을까..? 예를 들면, $$((\mathbb{Z}_2)^n, \lor)$$ 모노이드 (bitwise or) 위에서의 convolution 같은 것 말이다.
