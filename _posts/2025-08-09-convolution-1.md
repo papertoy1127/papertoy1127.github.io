@@ -44,4 +44,4 @@ $$ \sum_{i=0}^{N-1} \sum_{j=0}^{N-1} A_{k,i \oplus j}(f_i \cdot g_i) = \sum_{i=0
 
 위 식에서 $k$와 값에는 관계없이 $A_{k,x}$에 대한 식이 정해지므로 $A_{k,x} = \chi_k(x)$라고 하자. 각각의 $\chi_k$는 $A$의 행벡터이다. 역변환을 하기 위해서는 $A$의 역행렬이 존재해야 하므로 선형 독립인 $\chi$들을 $N$개 찾을 필요가 있다.
 
-바로 위의 식을 정리하면 $\chi(i+j \bmod N) = \chi(i) \chi(j)$가 되며, 이는 $\mathbb{Z}_n \rightarrow \mathbb{C}$의 homomorphism인 것을 알 수 있다. 따라서 $0 \leq k < N$인 $k$와 $N$'th root of unity $\omega_k = (e^{\frac{2 \pi i}{N}})^k$에 대해 $\chi_k(x) = (\omega_k)^x$로 두면 선형 독립인 $\chi$를 $N$개 얻을 수 있다. 이는 우리가 알고 있는 푸리에 행렬과 동등하다.
+바로 위의 식을 정리하면 $\chi(i+j \bmod N) = \chi(i) \chi(j)$가 되며, 이는 $\mathbb{Z}_n \rightarrow \mathbb{C}^\times$의 homomorphism인 것을 알 수 있다. 따라서 $0 \leq k < N$인 $k$와 $N$'th root of unity $\omega_k = (e^{\frac{2 \pi i}{N}})^k$에 대해 $\chi_k(x) = (\omega_k)^x$로 두면 선형 독립인 $\chi$를 $N$개 얻을 수 있다. 이는 우리가 알고 있는 푸리에 행렬과 동등하다.
